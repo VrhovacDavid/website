@@ -1,0 +1,136 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
+
+const content = [
+  {
+    points: [
+      {
+        text: "Sag 'Auf Wiedersehen' zu unnötigen Meetings",
+        description: "Hast du genug von endlosen Meetings? Wir auch. Deshalb haben wir den Meeting-Marathon komplett aus unserem Prozess gestrichen. Kommuniziere, wie es für dich passt, und behalte den Fokus auf das Wesentliche.",
+        icon: '/src/assets/icons/neu_meeting.svg',
+      },
+      {
+        text: "Automatisierte Prozesse mit Trello",
+        description: "Organisiere und überwache deine Designprojekte mühelos über Trello. Ob aktive, wartende oder abgeschlossene Aufgaben – alles ist übersichtlich und leicht zugänglich.",
+        icon: '/src/assets/icons/neu_trello.svg',
+      },
+      {
+        text: "Zusammen nach vorne",
+        description: "Du musst nicht mehr ständig neue Agenturen Suchen die dir deine Arbeit erledigt und überteuert ist, hier hast du über 100 Service's die du direkt brauchen kannst!",
+        icon: '/src/assets/icons/neu_teamwork.svg',
+      }
+    ],
+    images: [
+      'src/assets/trello.mp4',
+      'src/assets/organize.mp4',
+      'src/assets/teamwork.mp4',
+    ],
+    durations: [8, 6, 16] // Wartezeiten in Sekunden für die jeweiligen Videos
+  }
+  // Weitere Inhalte hier hinzufügen
+];
+
+const Section1 = () => {
+  const [currentContentIndex, setCurrentContentIndex] = useState(0);
+  const [highlightedPointIndex, setHighlightedPointIndex] = useState(0);
+  const [currentDuration, setCurrentDuration] = useState(content[0].durations[0]);
+  const videoRefs = useRef([]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHighlightedPointIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % content[0].points.length;
+        setCurrentDuration(content[0].durations[nextIndex]);
+        return nextIndex;
+      });
+    }, currentDuration * 1000);
+
+    return () => clearInterval(interval);
+  }, [currentDuration]);
+
+  useEffect(() => {
+    const pointsInterval = setInterval(() => {
+      setCurrentContentIndex((prevIndex) => (prevIndex + 1) % content.length);
+    }, currentDuration * 1000);
+
+    return () => clearInterval(pointsInterval);
+  }, [currentDuration]);
+
+  useEffect(() => {
+    videoRefs.current.forEach((video, index) => {
+      if (index === highlightedPointIndex) {
+        video.currentTime = 0;
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  }, [highlightedPointIndex]);
+
+  const handlePointClick = (index) => {
+    setHighlightedPointIndex(index);
+    setCurrentDuration(content[0].durations[index]);
+  };
+
+  return (
+    <div className="overflow-hidden bg-transparent py-24 sm:py-32" id='prozess'>
+      <div className="mx-auto max-w-4xl lg:max-w-7xl px-6 lg:px-8">
+        <div className='max-w-7xl'>
+          <p className="text-sm font-semibold leading-7 text-indigo-600">"Einmal TillTech, immer TillTech" – besser geht's nicht.</p>
+          <h3 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 ">Für dich Optimiert</h3>
+          <p className="mt-6 text-base  text-gray-600">Wir revolutionieren das Design-Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. Unsere Designs kommen so schnell und sind so überzeugend, dass sie nicht nur deine Erwartungen erfüllen, sondern diese weit übertreffen.</p>
+          {/* Button wird nur angezeigt, wenn der Text dick und größer ist */}
+
+          <div className="mt-10 flex items-center gap-x-6">
+            <a
+              href="#"
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Jetzt Starten
+            </a>
+            <a href="/Process" className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100">
+              Wie funktioniert TillTech? <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          {/* Linke Spalte mit Text */}
+          <div className="lg:pr-8 lg:pt-4">
+            <div className="lg:max-w-lg">
+              <ul className="mt-10 max-w-xl space-y-8 text-lg  text-black lg:max-w-none">
+                {content[0].points.map((point, index) => (
+                  <li key={index} className='cursor-pointer' onClick={() => handlePointClick(index)}>
+                    <div className="flex items-center relative pl-12">
+                      <img className='absolute left-1 h-10 w-10' src={point.icon} alt="Icon" />
+                      <span className={`cursor-pointer ${index === highlightedPointIndex ? ' font-bold' : 'text-lg'} transition-all duration-300`}>{point.text}</span>
+                    </div>
+                    <p className="text-base text-gray-600 mt-1">{point.description}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Rechte Spalte mit Bildern */}
+          <div>
+            {content[0].images.map((image, index) => (
+              <motion.video
+                key={index}
+                ref={(el) => (videoRefs.current[index] = el)}
+                src={image}
+                className={`${index === highlightedPointIndex ? 'block' : 'hidden'} lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                loop muted
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Section1;
