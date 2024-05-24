@@ -13,7 +13,7 @@ const testimonials = [
     author: {
       name: 'Markus Kathriner',
       handle: 'derschrankspezialist',
-      imageUrl: '/markus.png',
+      imageUrl: '/markus.avif',
     },
   } , {
     body: `David von Tilltech hat uns Schritt für Schritt in die Welt der Meta-Anzeigen für unseren Onlineshop eingeführt. Er hat grosse Geduld in seinen Coachings gezeigt, und die beeindruckenden Ergebnisse sprechen für sich.`,

@@ -17,7 +17,7 @@ import PricingNew from './PricingNew';
 import { useLocation } from 'react-router-dom';
 
 const Home = () => {
-
+ 
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
