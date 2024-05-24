@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
+  sitemap:{
+    hostname: 'https://tilltech.ch'
+  },
   plugins: [
     react(),
     visualizer({
@@ -11,6 +14,7 @@ export default defineConfig({
     })
   ],
   build: {
+    manifest: true,
     rollupOptions: {
       output: {
         manualChunks(id) {
