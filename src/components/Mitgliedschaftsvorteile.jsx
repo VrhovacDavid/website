@@ -30,7 +30,7 @@ const features = [
   {
     name: 'Blitzschnelle Umsetzung',
     description: 'Die Zeit drängt? Kein Problem. Unsere Prozesse garantieren, dass du deine Designs nicht nur in Top-Qualität, sondern auch in Rekordzeit erhältst. Im schnitt zwischen 24-48 Stunden',
-    icon: '/src/assets/icons/blitzschnell.svg',
+    icon: '/icons/blitzschnell.svg',
   },
 ]
 
