@@ -113,7 +113,7 @@ const navigation = {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">
               <img
-                className="h-7"
+                className="h-8 w-15"
                 src="/Logo.svg"
                 alt="TillTech"
               />

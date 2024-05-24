@@ -38,7 +38,7 @@ export default function Mitgliedschaftsvorteile() {
   return (
 
     <div id="vorteile">
-      <img src="/LeftForm.svg" alt="LeftForm" className=" -skew-y-3 md:-mb-8  sm:-mb-8" />
+      <img src="/LeftForm.svg" alt="LeftForm" className=" h-30 w-100 -skew-y-3 md:-mb-8  sm:-mb-8" />
 
       <div className="relative isolate overflow-hidden pattern-bg-primary py-24 sm:py-32 -skew-y-3">
 
