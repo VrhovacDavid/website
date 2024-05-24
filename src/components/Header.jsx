@@ -56,7 +56,8 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">TillTech</span>
-            <img className="h-8 w-15" src="/Logo.svg" alt="" />
+            <img    width={56}
+               height={32} src="/Logo.svg" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -153,7 +154,9 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">TillTech</span>
-              <img className="h-8 w-15 " src="/Logo.svg" alt="" />
+              <img    width={56}
+               height={32}
+                src="/Logo.svg" alt="" />
             </a>
             <button
               type="button"
