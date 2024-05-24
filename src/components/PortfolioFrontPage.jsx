@@ -35,7 +35,7 @@ const products = [
         color: '3D Modell',
         price: '$35',
         href: '#',
-        imageSrc: 'https://media.sketchfab.com/models/94b24a60dc1b48248de50bf087c0f042/thumbnails/7af9338238634ca3b0c3879b79313b9c/7a42ad415fa843d29895f51381b9fe87.jpeg',
+        imageSrc: '/3DImage.avif',
         imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
      
       },    {
