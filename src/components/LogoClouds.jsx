@@ -34,7 +34,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="./src/assets/logos/sms.png"
+                src="/tilltech_1/src/assets/logos/sms.png"
                                 alt="Laravel"
                 width={158}
                 height={48}
@@ -52,7 +52,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="./src/assets/logos/Google.svg"
+                src="../src/assets/logos/Google.svg"
                 alt="google"
                 width={158}
                 height={48}
