@@ -18,15 +18,15 @@ const data = [
   },
   {
  
-    img: '/src/assets/Portfolio/SFM.png',
+    img: '/Portfolio/SFM.png',
   },
   {
    href:'/nike',
-    img: '/src/assets/Portfolio/Nike.png',
+    img: '/Portfolio/Nike.png',
   },
   {
 
-    img: '/src/assets/Blend.svg',  },
+    img: '/Blend.svg',  },
   {
  
     img: 'https://cdn.dribbble.com/userupload/13682731/file/original-1fc1a9a9fe85e3b3d62ac0c7d5934273.png?resize=1024x1024',

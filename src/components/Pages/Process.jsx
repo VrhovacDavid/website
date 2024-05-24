@@ -8,17 +8,17 @@ const features = [
   {
     name: "Plan aussuchen",
     description: "Wähle den perfekten Plan für deine Bedürfnisse. Stöbere durch unsere flexiblen Optionen und finde die ideale Lösung, die deinen Anforderungen und Budget entspricht.",
-    icon: '/src/assets/icons/plan.svg',
+    icon: '/icons/plan.svg',
   },
   {
     name: "Bezahlen",
     description: " Nutze unser geschütztes Zahlungssystem, um deinen gewählten Plan schnell und unkompliziert zu aktivieren. Du hast die möglichkeit zwischen verschiedenen Zahlungsmöglichkeiten zu bezahlen (Kreditkarte, Klarna, etc.)",
-    icon: '/src/assets/icons/bezahlen.svg',
+    icon: '/icons/bezahlen.svg',
   },
   {
     name: "Loslegen",
     description: "Jetzt bist du startklar! Folge dem Link in deiner Bestätigungsmail, um dein erstes Designprojekt einzureichen und direkt loszulegen. PS: Du kannst so viele Design's wie du möchtest während deiner Zeit anfragen.",
-    icon: '/src/assets/icons/start.svg',
+    icon: '/icons/start.svg',
   }
 ]
 
@@ -27,17 +27,17 @@ const features1 = [
   {
     name: "Email erhalten",
     description: "Sobald du dich entschieden hast, erhältst du eine Bestätigungs-E-Mail mit allen Details deines Plans und Tipps, wie du das Beste aus deinem Abonnement herausholen kannst.",
-    icon: '/src/assets/icons/email.svg',
+    icon: '/icons/email.svg',
   },
   {
     name: "Bei Trello anmelden",
     description: "Über den Link kannst du dich bei Trello anmelden, um deinen Workflow zu organisieren und zu optimieren. Hier kannst du deine Projekte verwalten und den Fortschritt deiner Designanfragen in Echtzeit verfolgen.",
-    icon: '/src/assets/icons/login.svg',
+    icon: '/icons/login.svg',
   },
   {
     name: "Designanfrage einreichen",
     description: "In Trello kannst du dann deine Anfrage, obs mit Text, Loom oder wie es dir am liebsten ist, einreichen. Du kannst so viele Anfragen wie du möchtest rein tuhen, und wir arbeiten die stück für stück ab",
-    icon: '/src/assets/icons/nachricht.svg',
+    icon: '/icons/nachricht.svg',
   }
 ]
 
@@ -90,7 +90,7 @@ const Process = () => {
             </div>
 
             <video
-              src="/src/assets/Step1.mp4"
+              src="/Step1.mp4"
               alt="Schritt 6"
               className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
               autoPlay
@@ -131,7 +131,7 @@ const Process = () => {
             </div>
             <div className="flex items-start justify-center lg:order-first">
               <img
-                src="/src/assets/Credit Cards.svg"
+                src="/Credit Cards.svg"
                 alt="Product screenshot"
                 className="w-[24rem] md:max-w-none rounded-xl    ring-gray-400/10 "
                 width={2432}
@@ -175,7 +175,7 @@ const Process = () => {
               </div>
             </div>
             <video
-              src="/src/assets/Step3.mp4"
+              src="/Step3.mp4"
               alt="Schritt 3"
               className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
               autoPlay
@@ -211,7 +211,7 @@ const Process = () => {
             </div>
             <div className="flex items-center justify-center lg:items-start lg:justify-end lg:order-first">
             <video
-              src="/src/assets/Step4.mp4"
+              src="/Step4.mp4"
               alt="Schritt 3"
               className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
               autoPlay
@@ -243,7 +243,7 @@ const Process = () => {
               </div>
             </div>
             <video
-              src="/src/assets/Step5.mp4"
+              src="/Step5.mp4"
               alt="Schritt 5"
               className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
               autoPlay
@@ -284,7 +284,7 @@ const Process = () => {
             </div>
             <div className="flex items-center justify-center lg:items-start lg:justify-end lg:order-first">
             <video
-              src="/src/assets/Step6.mp4"
+              src="/Step6.mp4"
               alt="Schritt 6"
               className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
               autoPlay

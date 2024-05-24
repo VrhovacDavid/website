@@ -5,13 +5,13 @@ const features = [
   {
     name: 'Unbegrenzte Möglichkeiten',
     description: 'Schließe dich uns an und fordere so viele Designs an, wie dein Herz begehrt.',
-    icon: '/src/assets/icons/neu_unbegrenzt.svg',
+    icon: 'icons/neu_unbegrenzt.svg',
     href: '/section1page'
   },
   {
     name: 'Blitzschnelle Umsetzung',
     description: 'Dein Design landet in Rekordzeit auf deinem Schreibtisch – zuverlässig und effizient von Montag bis Freitag.',
-    icon: '/src/assets/icons/neu_blitz.svg',
+    icon: 'icons/neu_blitz.svg',
 
     href: '/section1page'
 
@@ -19,7 +19,7 @@ const features = [
   {
     name: '100% Zufriedenheitsgarantie',
     description: 'Wir feilen an deinen Entwürfen, bis sie genau deinen Vorstellungen entsprechen. Deine Zufriedenheit ist unser Versprechen.',
-    icon: '/src/assets/icons/neu_garantie.svg',
+    icon: 'icons/neu_garantie.svg',
 
     href: '/section1page'
 

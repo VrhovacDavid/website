@@ -6,7 +6,7 @@ const products = [
       color: 'Twitch',
       price: '$35',
       href: '#',
-      imageSrc: '/src/assets/Blend.svg',
+      imageSrc: '/Blend.svg',
       imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
    
     },

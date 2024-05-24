@@ -6,14 +6,14 @@ export const data = [
   {
     title: 'Gratis Download 🔥',
     alt: 'Downloads',
-    img: '/src/assets/IconPack.png',
+    img: '/IconPack.png',
     url: "/#downloads"
   },
   {
     title: 'Online Shop',
 
     alt: 'Shop',
-    img: '/src/assets/OS.png',
+    img: '/OS.png',
     url: 'https://tilltech.shop'
   },
   {
@@ -26,14 +26,14 @@ export const data = [
     title: '',
 
     alt: 'Portfolio',
-    img: '/src/assets/Portfolio.svg',
+    img: '/Portfolio.svg',
     url: '/portfolio'
   },
   {
     title: '',
 
     alt: 'Webseite',
-    img: '/src/assets/Webseite.svg',
+    img: '/Webseite.svg',
     url: '/'
   },
 
@@ -124,7 +124,7 @@ const Links = () => {
             <div class="flex justify-center items-center ">
               <div class="relative ">
                 <div class="w-44 h-44 rounded-full p-1 bg-gradient-to-r from-purple-300 to-blue-500">
-                  <img class="w-full h-full rounded-full object-cover" src="/src/assets/David.png" alt="Bordered avatar" />
+                  <img class="w-full h-full rounded-full object-cover" src="/David.png" alt="Bordered avatar" />
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-8 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="/src/assets/logos/derschrankspezialist.png"
+                src="/logos/derschrankspezialist.png"
 
                 alt="Logo"
                 width={158}
@@ -16,7 +16,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="/src/assets/logos/next.svg"
+                src="/logos/next.svg"
                 alt="Reform"
                 width={158}
                 height={48}
@@ -34,7 +34,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="/tilltech_1/src/assets/logos/sms.png"
+                src="/logos/sms.png"
                                 alt="Laravel"
                 width={158}
                 height={48}
@@ -43,7 +43,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="./src/assets/logos/meta.svg"
+                src="/logos/meta.svg"
                 alt="SavvyCal"
                 width={140}
                 height={32}
@@ -52,7 +52,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="../src/assets/logos/Google.svg"
+                src="/logos/Google.svg"
                 alt="google"
                 width={158}
                 height={48}

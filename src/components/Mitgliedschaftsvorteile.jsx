@@ -5,27 +5,27 @@ const features = [
   {
     name: 'Unbegrenzte Designfreiheit',
     description: 'Erweitere deine kreativen Horizonte. Füge deinem Design-Board so viele Anfragen hinzu, wie du möchtest, und sieh zu, wie deine Ideen lebendig werden.',
-    icon: '/src/assets/icons/neu_unbegrenzt.svg',
+    icon: '/icons/neu_unbegrenzt.svg',
   },
   {
     name: 'Transparente Kostenkontrolle',
     description: 'Mit unserem festen monatlichen Preis bleibst du immer im Budget. Keine Überraschungen, keine versteckten Kosten – nur klare, einfache Abrechnung.',
-    icon: '/src/assets/icons/transparent_kosten.svg',
+    icon: '/icons/transparent_kosten.svg',
   },
   {
     name: 'Erstklassige Designqualität',
     description: 'Jedes Mal. Zugriff auf erstklassige Designs, wann immer du sie benötigst. Unsere Experten stehen bereit, um dir jederzeit die höchste Qualität zu liefern.',
-    icon: '/src/assets/icons/quality.svg',
+    icon: '/icons/quality.svg',
   },
   {
     name: 'Absolute Flexibilität',
     description: 'Dein Business ändert sich, und deine Designbedürfnisse auch. Skaliere deinen Bedarf hoch oder runter, pausiere dein Abonnement oder kündige es jederzeit – ohne Komplikationen.',
-    icon: '/src/assets/icons/flexibel.svg',
+    icon: '/icons/flexibel.svg',
   },
   {
     name: 'Exklusiv für dich',
     description: 'Jedes Design, das wir erstellen, wird speziell für dich angefertigt und ist zu 100% dein Eigentum. Genieße die Sicherheit, dass deine Kreationen einzigartig und ganz allein dein sind.',
-    icon: '/src/assets/icons/exklusiv.svg',
+    icon: '/icons/exklusiv.svg',
   },
   {
     name: 'Blitzschnelle Umsetzung',
@@ -38,7 +38,7 @@ export default function Mitgliedschaftsvorteile() {
   return (
 
     <div id="vorteile">
-      <img src="/src/assets/LeftForm.svg" alt="LeftForm" className=" -skew-y-3 md:-mb-8  sm:-mb-8" />
+      <img src="/LeftForm.svg" alt="LeftForm" className=" -skew-y-3 md:-mb-8  sm:-mb-8" />
 
       <div className="relative isolate overflow-hidden pattern-bg-primary py-24 sm:py-32 -skew-y-3">
 

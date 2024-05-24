@@ -114,7 +114,7 @@ const navigation = {
             <div className="space-y-8">
               <img
                 className="h-7"
-                src="/src/assets/Logo.svg"
+                src="/Logo.svg"
                 alt="TillTech"
               />
               <p className="text-sm leading-6 text-gray-600">

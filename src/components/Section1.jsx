@@ -7,23 +7,23 @@ const content = [
       {
         text: "Sag 'Auf Wiedersehen' zu unnötigen Meetings",
         description: "Hast du genug von endlosen Meetings? Wir auch. Deshalb haben wir den Meeting-Marathon komplett aus unserem Prozess gestrichen. Kommuniziere, wie es für dich passt, und behalte den Fokus auf das Wesentliche.",
-        icon: '/src/assets/icons/neu_meeting.svg',
+        icon: '/icons/neu_meeting.svg',
       },
       {
         text: "Automatisierte Prozesse mit Trello",
         description: "Organisiere und überwache deine Designprojekte mühelos über Trello. Ob aktive, wartende oder abgeschlossene Aufgaben – alles ist übersichtlich und leicht zugänglich.",
-        icon: '/src/assets/icons/neu_trello.svg',
+        icon: '/icons/neu_trello.svg',
       },
       {
         text: "Zusammen nach vorne",
         description: "Du musst nicht mehr ständig neue Agenturen Suchen die dir deine Arbeit erledigt und überteuert ist, hier hast du über 100 Service's die du direkt brauchen kannst!",
-        icon: '/src/assets/icons/neu_teamwork.svg',
+        icon: '/icons/neu_teamwork.svg',
       }
     ],
     images: [
-      'src/assets/trello.mp4',
-      'src/assets/organize.mp4',
-      'src/assets/teamwork.mp4',
+      '/trello.mp4',
+      '/organize.mp4',
+      '/teamwork.mp4',
     ],
     durations: [8, 6, 16] // Wartezeiten in Sekunden für die jeweiligen Videos
   }
