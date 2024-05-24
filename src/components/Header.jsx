@@ -153,7 +153,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">TillTech</span>
-              <img className="h-8 w-auto" src="/src/assets/Logo.svg" alt="" />
+              <img className="h-8 w-auto" src="/public/Logo.svg" alt="" />
             </a>
             <button
               type="button"
