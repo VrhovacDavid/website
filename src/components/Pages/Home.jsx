@@ -17,17 +17,12 @@ import PricingNew from './PricingNew';
 import { useLocation } from 'react-router-dom';
 
 const Home = () => {
- 
-
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
   });
-
-
-
 
   const location = useLocation();
 
@@ -40,6 +35,10 @@ const Home = () => {
     }
   }, [location]);
 
+  useEffect(() => {
+    const gradient = new Gradient();
+    gradient.initGradient("#gradient-canvas");
+  }, []);
 
   return (
     <div className='pattern-bg'>
@@ -47,7 +46,9 @@ const Home = () => {
         <motion.div className="fixed z-10 top-0 left-0 right-0 h-[4px] bg-gradient-to-r from-fuchsia-400 to-sky-400 origin-left" style={{ scaleX }} />
         <Header />
         <HeroSection />
-  
+        <div className='-skew-y-6 z-10'>
+          <canvas id="gradient-canvas" className='sm:h-[300px] h-[200px] w-full' ></canvas>
+        </div>
         <FeatureSection1 />
         <LogoClouds />
         <Section1 />
@@ -57,7 +58,7 @@ const Home = () => {
         <Testimonials />
         <PricingNew />
         <FAQ />
-        <Download  />
+        <Download />
         <Footer />
       </div>
     </div>
