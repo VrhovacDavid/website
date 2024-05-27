@@ -141,7 +141,7 @@ const tabs = [
   
   ],
   
-  "image": "/VideoEdit.svg"
+  "image": "/Development.svg"
   
   }, {
   
