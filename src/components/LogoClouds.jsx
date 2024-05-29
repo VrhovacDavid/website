@@ -6,7 +6,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-8 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="/logos/derschrankspezialist.png"
+                src="/logos/Schrankspezialist.webp"
 
                 alt="Logo"
                 width={158}
@@ -16,7 +16,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="/logos/next.svg"
+                src="/logos/NextFertility.webp"
                 alt="Reform"
                 width={158}
                 height={48}
@@ -25,7 +25,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+                src="/logos/Dipon.webp"
                 alt="Tuple"
                 width={158}
                 height={48}
@@ -43,7 +43,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="/logos/meta.svg"
+                src="/logos/SFM.webp"
                 alt="SavvyCal"
                 width={140}
                 height={32}
@@ -52,7 +52,7 @@ export default function LogoClouds() {
             <div className="bg-primary p-6 sm:p-10">
               <img
                 className="max-h-12 w-full object-contain"
-                src="/logos/Google.svg"
+                src="/logos/Aqua.webp"
                 alt="google"
                 width={158}
                 height={48}

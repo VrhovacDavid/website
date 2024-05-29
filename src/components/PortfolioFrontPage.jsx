@@ -16,7 +16,7 @@ const products = [
         color: 'Wallpaper',
         price: '$35',
         href: '#',
-        imageSrc: 'https://img.freepik.com/free-vector/abstract-paper-style-background_52683-135139.jpg?w=740',
+        imageSrc: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/244550197361593.662f83461160d.png',
         imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
      
       },
@@ -26,7 +26,7 @@ const products = [
         color: 'Website',
         price: '$35',
         href: '#',
-        imageSrc: 'https://img.freepik.com/free-vector/web-design-template-design_23-2150913748.jpg?w=740',
+        imageSrc:   '/Portfolio/Nike.png',
         imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
      
       },    {
@@ -44,7 +44,7 @@ const products = [
         color: 'Brutalism',
         price: '$35',
         href: '#',
-        imageSrc: 'https://img.freepik.com/free-vector/hand-drawn-brutalism-poster-template_52683-157881.jpg?w=1060',
+        imageSrc: '/Brutalism.webp',
         imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
      
       },

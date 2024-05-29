@@ -51,7 +51,7 @@ const tabs = [
   
   ],
   
-  "image": "https://img.freepik.com/free-psd/3d-holographic-fluid-shape-illustration_47987-7689.jpg?t=st=1712651251~exp=1712654851~hmac=2b89e2e82ca936f49b42e12b423dfdde172c56de28bb9d437ca3037918bb75be&w=1060"
+  "image": "/Brutalism.webp"
   
   },
   
@@ -99,7 +99,7 @@ const tabs = [
   
   ],
   
-  "image": "/Development.svg"
+  "image": "/Development.webp"
   
   }, {
   

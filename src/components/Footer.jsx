@@ -7,9 +7,9 @@ const navigation = {
     solutions: [
       { name: 'Home', href: '/' },
       { name: 'Wie funktioniert TillTech?', href: '/process' },
-      { name: 'Preise', href: '#/pricing' },
+      { name: 'Preise', href: '/#pricing' },
       { name: 'Portfolio', href: '/portfolio' },
-      { name: 'Dienstleistungen', href: '#/dienstleistungen' },
+      { name: 'Dienstleistungen', href: '/#dienstleistungen' },
       
 
     ],

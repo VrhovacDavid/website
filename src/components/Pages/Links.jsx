@@ -10,11 +10,11 @@ export const data = [
     url: "/#downloads"
   },
   {
-    title: 'Online Shop',
+    title: 'Online Shop (Coming Soon)',
 
     alt: 'Shop',
     img: '/OS.png',
-    url: 'https://tilltech.shop'
+
   },
   {
     title: 'Camera Gear',
