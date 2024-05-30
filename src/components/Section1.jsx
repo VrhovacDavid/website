@@ -27,7 +27,6 @@ const content = [
     ],
     durations: [8, 6, 16] // Wartezeiten in Sekunden für die jeweiligen Videos
   }
-  // Weitere Inhalte hier hinzufügen
 ];
 
 const Section1 = () => {
@@ -36,6 +35,7 @@ const Section1 = () => {
   const [currentDuration, setCurrentDuration] = useState(content[0].durations[0]);
   const videoRefs = useRef([]);
 
+  // Handles the automatic cycling of points
   useEffect(() => {
     const interval = setInterval(() => {
       setHighlightedPointIndex((prevIndex) => {
@@ -48,14 +48,7 @@ const Section1 = () => {
     return () => clearInterval(interval);
   }, [currentDuration]);
 
-  useEffect(() => {
-    const pointsInterval = setInterval(() => {
-      setCurrentContentIndex((prevIndex) => (prevIndex + 1) % content.length);
-    }, currentDuration * 1000);
-
-    return () => clearInterval(pointsInterval);
-  }, [currentDuration]);
-
+  // Manages video play/pause based on the highlighted point
   useEffect(() => {
     videoRefs.current.forEach((video, index) => {
       if (index === highlightedPointIndex) {
@@ -78,8 +71,9 @@ const Section1 = () => {
         <div className='max-w-7xl'>
           <p className="text-sm font-semibold leading-7 text-indigo-600">"Einmal TillTech, immer TillTech" – besser geht's nicht.</p>
           <h3 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 ">Für dich Optimiert</h3>
-          <p className="mt-6 text-base  text-gray-600">Wir revolutionieren das Design-Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. Unsere Designs kommen so schnell und sind so überzeugend, dass sie nicht nur deine Erwartungen erfüllen, sondern diese weit übertreffen.</p>
-          {/* Button wird nur angezeigt, wenn der Text dick und größer ist */}
+          <p className="mt-6 text-base  text-gray-600">
+            Wir revolutionieren das Design-Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. Unsere Designs kommen so schnell und sind so überzeugend, dass sie nicht nur deine Erwartungen erfüllen, sondern diese weit übertreffen.
+          </p>
 
           <div className="mt-10 flex items-center gap-x-6">
             <a
@@ -95,7 +89,7 @@ const Section1 = () => {
         </div>
 
         <div className="grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          {/* Linke Spalte mit Text */}
+          {/* Left column with text */}
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <ul className="mt-10 max-w-xl space-y-8 text-lg  text-black lg:max-w-none">
@@ -112,7 +106,7 @@ const Section1 = () => {
             </div>
           </div>
 
-          {/* Rechte Spalte mit Bildern */}
+          {/* Right column with videos */}
           <div>
             {content[0].images.map((image, index) => (
               <motion.video
@@ -124,6 +118,7 @@ const Section1 = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
                 loop muted
+                loading="lazy"
               />
             ))}
           </div>

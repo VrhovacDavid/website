@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { motion } from 'framer-motion';
 import { CheckBadgeIcon } from "@heroicons/react/24/solid";
 const tabs = [
@@ -240,6 +240,47 @@ const tabs = [
   
   ];
 
+  const LazyVideo = ({ src, ...props }) => {
+    const [isVisible, setIsVisible] = useState(false);
+    const videoRef = useRef(null);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+              observer.disconnect();
+            }
+          });
+        },
+        {
+          threshold: 0.25,
+        }
+      );
+  
+      if (videoRef.current) {
+        observer.observe(videoRef.current);
+      }
+  
+      return () => {
+        if (videoRef.current) {
+          observer.unobserve(videoRef.current);
+        }
+      };
+    }, []);
+  
+    return (
+      <motion.video
+        ref={videoRef}
+        src={isVisible ? src : undefined}
+        {...props}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      />
+    );
+  };
   
   export default function WorkList() {
     const [activeTab, setActiveTab] = useState(tabs[0].id);
@@ -256,7 +297,7 @@ const tabs = [
           setActiveTab(tabs[nextIndex].id);
         }
         hasScrolled.current = false;
-      }, 8000); // Tab-Wechsel alle 16 Sekunden
+      }, 8000);
   
       return () => clearInterval(interval);
     }, [activeTab]);
@@ -284,7 +325,6 @@ const tabs = [
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
   
-    // Intersection Observer für die Section
     useEffect(() => {
       const observer = new IntersectionObserver(([entry]) => {
         isInViewRef.current = entry.isIntersecting;
@@ -306,16 +346,20 @@ const tabs = [
       hasScrolled.current = true;
       setTimeout(() => {
         hasScrolled.current = false;
-      }, 500); // Kurze Verzögerung, um das Scrollen zu ermöglichen
+      }, 500);
     };
+  
+    const activeTabData = useMemo(() => tabs.find(tab => tab.id === activeTab), [activeTab]);
   
     return (
       <div ref={sectionRef} className="overflow-hidden bg-transparent py-24 sm:py-32" id="dienstleistungen">
         <div className="mx-auto lg:max-w-7xl max-w-4xl px-6 lg:px-8">
           <div className="max-w-7xl text-start pb-4">
             <p className="text-sm font-semibold leading-7 text-indigo-600">Unsere Dienstleistungen – Deine kreative Spielwiese</p>
-            <h3 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 ">Entdecke die Vielfalt unserer Designleistungen</h3>
-            <p className="mt-6 text-start text-base  text-gray-600">Bei TillTech bieten wir dir ein breites Spektrum an Designservices, die darauf abgestimmt sind, jede deiner kreativen Anforderungen zu erfüllen. Von der ersten Skizze bis zum finalen Produkt, unsere maßgeschneiderten Lösungen decken alles ab. Egal, ob du frische Ideen für dein Branding brauchst, eine neue Website gestalten möchtest oder innovative App-Designs suchst – wir sind dein zuverlässiger Partner.</p>
+            <h3 className="mt-2 text-4xl font-bold tracking-tight text-gray-900">Entdecke die Vielfalt unserer Designleistungen</h3>
+            <p className="mt-6 text-start text-base text-gray-600">
+              Bei TillTech bieten wir dir ein breites Spektrum an Designservices, die darauf abgestimmt sind, jede deiner kreativen Anforderungen zu erfüllen. Von der ersten Skizze bis zum finalen Produkt, unsere maßgeschneiderten Lösungen decken alles ab. Egal, ob du frische Ideen für dein Branding brauchst, eine neue Website gestalten möchtest oder innovative App-Designs suchst – wir sind dein zuverlässiger Partner.
+            </p>
           </div>
   
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -328,7 +372,7 @@ const tabs = [
                         key={tab.id}
                         ref={el => tabRefs.current[index] = el}
                         onClick={() => handleTabClick(tab.id)}
-                        className={`${activeTab === tab.id ? " text-indigo-700" : "hover:text-gray-700"}  relative rounded-md px-4 py-2 text-sm  text-gray-500 whitespace-nowrap`}
+                        className={`${activeTab === tab.id ? " text-indigo-700" : "hover:text-gray-700"} relative rounded-md px-4 py-2 text-sm text-gray-500 whitespace-nowrap`}
                       >
                         {activeTab === tab.id && (
                           <motion.div layoutId='active-pill' className="absolute inset-0 bg-indigo-100" style={{ borderRadius: 8 }} />
@@ -340,7 +384,7 @@ const tabs = [
   
                   <div className="mt-4 flex flex-row">
                     <div className="p-2">
-                      {tabs.find(tab => tab.id === activeTab).points.map((point, index) => (
+                      {activeTabData.points.map((point, index) => (
                         <div key={index} className="flex flex-row justify-start align-middle content-center">
                           <CheckBadgeIcon className="h-5 w-5 text-sky-500 stroke-white" />
                           <p className="text-gray-500 text-base">{point}</p>
@@ -348,7 +392,7 @@ const tabs = [
                       ))}
                     </div>
                     <div className="p-2">
-                      {tabs.find(tab => tab.id === activeTab).points2.map((point, index) => (
+                      {activeTabData.points2.map((point, index) => (
                         <div key={index} className="flex flex-row justify-start align-middle content-center">
                           <CheckBadgeIcon className="h-5 w-5 text-sky-500 stroke-white" />
                           <p className="text-gray-500 text-base">{point}</p>
@@ -361,35 +405,18 @@ const tabs = [
             </div>
   
             <div>
-            <motion.video
-            key={activeTab}
-            src={tabs.find(tab => tab.id === activeTab).image}
-             
-              alt="Schritt 6"
-              className="h-[500px] w-[500px] rounded-xl"
-              autoPlay
-              loop
-              muted
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            />
-             
+              <LazyVideo
+                key={activeTab}
+                src={activeTabData.image}
+                alt={activeTabData.label}
+                className="h-[500px] w-[500px] rounded-xl"
+                autoPlay
+                loop
+                muted
+              />
             </div>
           </div>
         </div>
       </div>
     );
   }
-  
-
-
-  /*  <motion.img
-  key={activeTab}
-  src={tabs.find(tab => tab.id === activeTab).image}
-  alt={`Bild ${activeTab}`}
-  className="h-full w-full rounded-xl"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 0.5 }}
-/>*/

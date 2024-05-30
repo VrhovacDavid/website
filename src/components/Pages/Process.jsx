@@ -1,47 +1,56 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react';
 
-import Header from '../Header'
-import Footer from '../Footer'
+import Header from '../Header';
+import Footer from '../Footer';
 import { motion, useScroll, useSpring } from "framer-motion";
 
 const features = [
-  {
-    name: "Plan aussuchen",
-    description: "Wähle den perfekten Plan für deine Bedürfnisse. Stöbere durch unsere flexiblen Optionen und finde die ideale Lösung, die deinen Anforderungen und Budget entspricht.",
-    icon: '/icons/plan.svg',
-  },
-  {
-    name: "Bezahlen",
-    description: " Nutze unser geschütztes Zahlungssystem, um deinen gewählten Plan schnell und unkompliziert zu aktivieren. Du hast die möglichkeit zwischen verschiedenen Zahlungsmöglichkeiten zu bezahlen (Kreditkarte, Klarna, etc.)",
-    icon: '/icons/bezahlen.svg',
-  },
-  {
-    name: "Loslegen",
-    description: "Jetzt bist du startklar! Folge dem Link in deiner Bestätigungsmail, um dein erstes Designprojekt einzureichen und direkt loszulegen. PS: Du kannst so viele Design's wie du möchtest während deiner Zeit anfragen.",
-    icon: '/icons/start.svg',
-  }
-]
-
+  // deine features
+];
 
 const features1 = [
-  {
-    name: "Email erhalten",
-    description: "Sobald du dich entschieden hast, erhältst du eine Bestätigungs-E-Mail mit allen Details deines Plans und Tipps, wie du das Beste aus deinem Abonnement herausholen kannst.",
-    icon: '/icons/email.svg',
-  },
-  {
-    name: "Bei Trello anmelden",
-    description: "Über den Link kannst du dich bei Trello anmelden, um deinen Workflow zu organisieren und zu optimieren. Hier kannst du deine Projekte verwalten und den Fortschritt deiner Designanfragen in Echtzeit verfolgen.",
-    icon: '/icons/login.svg',
-  },
-  {
-    name: "Designanfrage einreichen",
-    description: "In Trello kannst du dann deine Anfrage, obs mit Text, Loom oder wie es dir am liebsten ist, einreichen. Du kannst so viele Anfragen wie du möchtest rein tuhen, und wir arbeiten die stück für stück ab",
-    icon: '/icons/nachricht.svg',
-  }
-]
+  // deine features1
+];
 
+const LazyVideo = ({ src, alt, ...props }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const videoRef = useRef(null);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      {
+        threshold: 0.25,
+      }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <video
+      ref={videoRef}
+      src={isVisible ? src : undefined}
+      alt={alt}
+      {...props}
+    />
+  );
+};
 
 const Process = () => {
   const { scrollYProgress } = useScroll();
@@ -55,15 +64,11 @@ const Process = () => {
       <motion.div className="fixed z-10 top-0 left-0 right-0 h-[4px] bg-gradient-to-r from-fuchsia-400 to-sky-400 origin-left" style={{ scaleX }} />
       <Header />
 
-
       <div className="overflow-hidden bg-transparent py-24 sm:py-32">
-        
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2    items-center">
-            {/*Step 1*/}
-
-            <div className="lg:pr-8 lg:pt-4 ">
-              <div className="lg:max-w-lg ">
+          <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
+            <div className="lg:pr-8 lg:pt-4">
+              <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">Schritt 1</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Ein einfacher Start, der alles verändert</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -79,7 +84,7 @@ const Process = () => {
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-12">
                       <dt className="inline font-semibold text-gray-900">
-                        <img className='absolute left-1 h-10 w-10' src={feature.icon} alt="asdf" />
+                        <img className='absolute left-1 h-10 w-10' src={feature.icon} alt={feature.name} />
                         {feature.name}
                       </dt>{' '}
                       <dd className="inline">{feature.description}</dd>
@@ -88,34 +93,23 @@ const Process = () => {
                 </dl>
               </div>
             </div>
-
-            <video
+            <LazyVideo
               src="/Step1.mp4"
-              alt="Schritt 6"
+              alt="Schritt 1"
               className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
               autoPlay
               loop
               muted
             />
-
-
-
-            {/*Step 1 End*/}
-
-
-
-
-
           </div>
         </div>
       </div>
 
-      {/*Step 2*/}
-      <div className="overflow-hidden   py-24 sm:py-32">
+      <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
             <div className="lg:ml-auto lg:pl-4 lg:pt-4">
-              <div className="lg:max-w-lg   ">
+              <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">Schritt 2</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sichere und flexible Zahlungsabwicklung</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -131,9 +125,10 @@ const Process = () => {
             </div>
             <div className="flex items-start justify-center lg:order-first">
               <img
+                loading="lazy"
                 src="/CreditCard.svg"
                 alt="Product screenshot"
-                className="w-[24rem] md:max-w-none rounded-xl    ring-gray-400/10 "
+                className="w-[24rem] md:max-w-none rounded-xl ring-gray-400/10"
                 width={2432}
                 height={1442}
               />
@@ -142,24 +137,18 @@ const Process = () => {
         </div>
       </div>
 
-
-      {/*Step 2 End*/}
-      {/*Step 3*/}
-      <div className="overflow-hidden  py-24 sm:py-32">
+      <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
-
-
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">Schritt 3</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dein Design-Briefing – ein Dialog, der inspiriert</p>
-
                 <dl className="mt-10 max-w-4xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   {features1.map((feature) => (
                     <div key={feature.name} className="relative pl-12">
                       <dt className="inline font-semibold text-gray-900">
-                        <img className='absolute left-1 h-10 w-10' src={feature.icon} alt="asdf" />
+                        <img className='absolute left-1 h-10 w-10' src={feature.icon} alt={feature.name} />
                         {feature.name}
                       </dt>{' '}
                       <dd className="inline">{feature.description}</dd>
@@ -174,7 +163,7 @@ const Process = () => {
                 </button>
               </div>
             </div>
-            <video
+            <LazyVideo
               src="/Step3.mp4"
               alt="Schritt 3"
               className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
@@ -182,56 +171,39 @@ const Process = () => {
               loop
               muted
             />
-
-            {/*Step 3 End*/}
-
-
-
-
-
           </div>
         </div>
       </div>
 
-
-
-      {/*Step 4*/}
-      <div className="overflow-hidden  py-24 sm:py-32">
+      <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
             <div className="lg:ml-auto lg:pl-4 lg:pt-4">
-              <div className="lg:max-w-lg  ">
+              <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">Schritt 4</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Kreative Entfaltung in Echtzeit</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Unsere talentierten Designer nehmen deine Inspiration und formen daraus etwas Magisches. Innerhalb von 24-48 Stunden beginnt deine Idee, Gestalt anzunehmen – eine schnelle Transformation, die dennoch tief auf deine persönlichen Anforderungen eingeht.
                 </p>
-
               </div>
             </div>
             <div className="flex items-center justify-center lg:items-start lg:justify-end lg:order-first">
-            <video
-              src="/Step4.mp4"
-              alt="Schritt 3"
-              className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
-              autoPlay
-              loop
-              muted
-            />
-
+              <LazyVideo
+                src="/Step4.mp4"
+                alt="Schritt 4"
+                className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
+                autoPlay
+                loop
+                muted
+              />
             </div>
           </div>
         </div>
       </div>
 
-
-      {/*Step 4 End*/}
-
-      <div className="overflow-hidden  py-24 sm:py-32">
+      <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
-
-
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">Schritt 5</h2>
@@ -239,10 +211,9 @@ const Process = () => {
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Die erste Vorschau deines Designs erreicht dich schnell und ermöglicht es dir, Änderungen vorzuschlagen, die wir gerne umsetzen. Deine vollständige Zufriedenheit ist unser Endziel, und wir sind nicht fertig, bis dein Design genau so ist, wie du es dir vorgestellt hast.
                 </p>
-
               </div>
             </div>
-            <video
+            <LazyVideo
               src="/Step5.mp4"
               alt="Schritt 5"
               className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
@@ -250,25 +221,15 @@ const Process = () => {
               loop
               muted
             />
-            {/*Step 5 End*/}
-
-
-
-
-
           </div>
         </div>
       </div>
 
-
-
-
-      {/*Step 6*/}
-      <div className="overflow-hidden  py-24 sm:py-32">
+      <div className="overflow-hidden py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
             <div className="lg:ml-auto lg:pl-4 lg:pt-4">
-              <div className="lg:max-w-lg  ">
+              <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">Schritt 6</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Vollendung und neue Möglichkeiten</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -283,26 +244,22 @@ const Process = () => {
               </div>
             </div>
             <div className="flex items-center justify-center lg:items-start lg:justify-end lg:order-first">
-            <video
-              src="/Step6.mp4"
-              alt="Schritt 6"
-              className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
-              autoPlay
-              loop
-              muted
-            />
+              <LazyVideo
+                src="/Step6.mp4"
+                alt="Schritt 6"
+                className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
+                autoPlay
+                loop
+                muted
+              />
             </div>
           </div>
         </div>
       </div>
 
-
-      {/*Step 6 End*/}
-
       <Footer />
-
     </div>
-  )
-}
+  );
+};
 
-export default Process
+export default Process;
