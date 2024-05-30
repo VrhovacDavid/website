@@ -5,6 +5,7 @@ export default function LogoClouds() {
           <div className="mx-auto grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
             <div className="bg-primary p-8 sm:p-10">
               <img
+                loading="lazy"
                 className="max-h-12 w-full object-contain"
                 src="/logos/Schrankspezialist.webp"
 
@@ -15,6 +16,7 @@ export default function LogoClouds() {
             </div>
             <div className="bg-primary p-6 sm:p-10">
               <img
+                loading="lazy"
                 className="max-h-12 w-full object-contain"
                 src="/logos/NextFertility.webp"
                 alt="Reform"
@@ -24,6 +26,7 @@ export default function LogoClouds() {
             </div>
             <div className="bg-primary p-6 sm:p-10">
               <img
+                loading="lazy"
                 className="max-h-12 w-full object-contain"
                 src="/logos/Dipon.webp"
                 alt="Tuple"
@@ -33,6 +36,7 @@ export default function LogoClouds() {
             </div>
             <div className="bg-primary p-6 sm:p-10">
               <img
+                loading="lazy"
                 className="max-h-12 w-full object-contain"
                 src="/logos/sms.png"
                                 alt="Laravel"
@@ -40,8 +44,9 @@ export default function LogoClouds() {
                 height={48}
               />
             </div>
+            
             <div className="bg-primary p-6 sm:p-10">
-              <img
+              <img  loading="lazy"
                 className="max-h-12 w-full object-contain"
                 src="/logos/SFM.webp"
                 alt="SavvyCal"
@@ -50,7 +55,7 @@ export default function LogoClouds() {
               />
             </div>
             <div className="bg-primary p-6 sm:p-10">
-              <img
+              <img  loading="lazy"
                 className="max-h-12 w-full object-contain"
                 src="/logos/Aqua.webp"
                 alt="google"

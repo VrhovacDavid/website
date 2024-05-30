@@ -74,6 +74,7 @@ const products = [
                   <div className="group relative">
                     <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
                       <img
+                      loading="lazy"
                         src={product.imageSrc}
                         alt={product.imageAlt}
                         className="h-full w-full object-cover object-center group-hover:opacity-75"
