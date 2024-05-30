@@ -51,7 +51,7 @@ const tabs = [
   
   ],
   
-  "image": "/Brutalism.webp"
+  "image": "/GrafikDesign.mp4"
   
   },
   
@@ -99,7 +99,7 @@ const tabs = [
   
   ],
   
-  "image": "/Development.webp"
+  "image": "/Development.mp4"
   
   }, {
   
@@ -141,7 +141,7 @@ const tabs = [
   
   ],
   
-  "image": "/Development.svg"
+  "image": "/ContentCreation.mp4"
   
   }, {
   
@@ -232,62 +232,11 @@ const tabs = [
   "Richtlinien und Verfahren",
   ],
   
-  "image": "https://img.freepik.com/free-psd/3d-holographic-fluid-shape-illustration_47987-7689.jpg?t=st=1712651251~exp=1712654851~hmac=2b89e2e82ca936f49b42e12b423dfdde172c56de28bb9d437ca3037918bb75be&w=1060"
+  "image": "/Dokumentation.mp4"
   
   },
   
-  {
   
-  id: "Banner", label: "Digitale Medien",
-  
-  points: ["Logos",
-  
-  "Webdesign",
-  
-  "App Entwicklung",
-  
-  "E-Commerce ",
-  
-  "CMS",
-  
-  "SM Management",
-  
-  "Digitale Kataloge",
-  
-  "Online Werbespiele",
-  
-  "Virtual Reality (VR)",
-  
-  "Podcast Produktion",
-  
-  "E-Learning und Webinare",
-  
-  ], image: "https://img.freepik.com/premium-vector/3d-vector-cute-ghost-halloween-ghost-halloween-holiday-concept_112554-1119.jpg?w=1060",
-  
-  points2: [
-  
-  "Digitale Strategie",
-  
-  "Social Media Strategie",
-  
-  "E-Learning Plattformen",
-  
-  "Digital Assets",
-  
-  "Online Community",
-
-  
-  "Online Sicherheit",
-  
-  "Digitale Transformation",
-  
-  "CDN",
-  
-  "Virtual Reality Erlebnisse",
-  
-  ],
-  
-  },
   
   ];
 
@@ -412,15 +361,20 @@ const tabs = [
             </div>
   
             <div>
-              <motion.img
-                key={activeTab}
-                src={tabs.find(tab => tab.id === activeTab).image}
-                alt={`Bild ${activeTab}`}
-                className="h-full w-full rounded-xl"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              />
+            <motion.video
+            key={activeTab}
+            src={tabs.find(tab => tab.id === activeTab).image}
+             
+              alt="Schritt 6"
+              className="h-[500px] w-[500px] rounded-xl"
+              autoPlay
+              loop
+              muted
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            />
+             
             </div>
           </div>
         </div>
@@ -428,3 +382,14 @@ const tabs = [
     );
   }
   
+
+
+  /*  <motion.img
+  key={activeTab}
+  src={tabs.find(tab => tab.id === activeTab).image}
+  alt={`Bild ${activeTab}`}
+  className="h-full w-full rounded-xl"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.5 }}
+/>*/

@@ -131,7 +131,7 @@ const Process = () => {
             </div>
             <div className="flex items-start justify-center lg:order-first">
               <img
-                src="/Credit Cards.svg"
+                src="/CreditCard.svg"
                 alt="Product screenshot"
                 className="w-[24rem] md:max-w-none rounded-xl    ring-gray-400/10 "
                 width={2432}
