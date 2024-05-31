@@ -74,12 +74,15 @@ const Process = () => {
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Im ersten schritt, wählst du einen Plan, der zu dir passt, und schon bist du bereit, die Grenzen deiner Kreativität neu zu definieren. Dies ist der Moment, in dem alles beginnt – mit nur einem Klick.
                 </p>
-                <button
-                  type="button"
-                  className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
+                <div className='my-2'>
+                <a
+                  href='/#pricing'
+                  className="rounded-md bg-indigo-50  px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100" 
                 >
                   Plan auswählen
-                </button>
+                </a>
+                </div>
+               
                 <dl className="mt-10 max-w-4xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-12">
@@ -115,12 +118,15 @@ const Process = () => {
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Deine finanzielle Sicherheit ist uns ebenso wichtig wie deine kreative Zufriedenheit. Mit Stripe garantieren wir eine sichere und reibungslose Zahlungsabwicklung, die dir volle Kontrolle und Freiheit bietet. Hier kannst du ohne Sorgen investieren, denn deine Sicherheit und Flexibilität stehen an erster Stelle. Im Kundenportal, kannst du dein Abo ändern, pausieren oder kündigen und das jederzeit.
                 </p>
-                <button
-                  type="button"
+                <div className='my-2'>
+                <a
+                  href='https://billing.stripe.com/p/login/28oaHy9m414Bfgk288'
                   className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
                 >
                   Kundenportal
-                </button>
+                </a>
+                </div>
+               
               </div>
             </div>
             <div className="flex items-start justify-center lg:order-first">
@@ -235,12 +241,14 @@ const Process = () => {
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Mit jedem abgeschlossenen Design öffnet sich ein neues Kapitel für deine Projekte. Die Dateien gehören dir – eine Sammlung von Werken wird grösser. Und wenn du bereit für mehr bist, steht die nächste Seite deiner kreativen Reise schon bereit. Du hast die möglichkeit in einem Monat so viele Design's wie du möchtest erstellen zu lassen. Du kannst auch mehrer Design's in die Warteschlange stecken und wir erledigen sie nach und nach. Bereit deine Reise zu Starten?
                 </p>
-                <button
-                  type="button"
-                  className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
+                <div className='my-2'>
+                <a
+                  href='/#pricing'
+                  className="rounded-md bg-indigo-50  px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100" 
                 >
-                  Jetzt Starten
-                </button>
+                 Jetzt Starten
+                </a>
+                </div>
               </div>
             </div>
             <div className="flex items-center justify-center lg:items-start lg:justify-end lg:order-first">

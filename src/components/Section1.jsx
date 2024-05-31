@@ -77,12 +77,12 @@ const Section1 = () => {
 
           <div className="mt-10 flex items-center gap-x-6">
             <a
-              href="#"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              href="#pricing"
+              className="rounded-md bg-violet-500 border-2 border-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
             >
               Jetzt Starten
             </a>
-            <a href="/Process" className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100">
+            <a href="/Process" className="rounded-md  px-3.5 py-2.5 text-sm font-semibold text-violet-500 border-2 border-violet-500">
               Wie funktioniert TillTech? <span aria-hidden="true">→</span>
             </a>
           </div>

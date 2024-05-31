@@ -38,7 +38,7 @@ export default function Example() {
             <div className="inline-flex space-x-2 bg-indigo-600/10 p-2.5 rounded-lg max-w-lg">
               <div className="flex flex-col content-center justify-center align-middle">
                 <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-600/80 opacity-75"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-500 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-600"></span>
                 </span>
               </div>
@@ -56,11 +56,11 @@ export default function Example() {
           <div className="mt-10 flex items-center gap-x-6">
             <a
               href="#pricing"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-violet-500 border-2 border-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm "
             >
               Jetzt Starten
             </a>
-            <a href="#" className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100">
+            <a href="#prozess" className=" rounded-md  px-3.5 py-2.5 text-sm font-semibold text-violet-500 border-2 border-violet-500 ">
               Mehr erfahren <span aria-hidden="true">→</span>
             </a>
           </div>

@@ -372,10 +372,10 @@ const tabs = [
                         key={tab.id}
                         ref={el => tabRefs.current[index] = el}
                         onClick={() => handleTabClick(tab.id)}
-                        className={`${activeTab === tab.id ? " text-indigo-700" : "hover:text-gray-700"} relative rounded-md px-4 py-2 text-sm text-gray-500 whitespace-nowrap`}
+                        className={`${activeTab === tab.id ? " text-gray-400" : "hover:text-gray-700"} relative rounded-md px-4 py-2 text-sm text-gray-500 whitespace-nowrap`}
                       >
                         {activeTab === tab.id && (
-                          <motion.div layoutId='active-pill' className="absolute inset-0 bg-indigo-100" style={{ borderRadius: 8 }} />
+                          <motion.div layoutId='active-pill' className="absolute inset-0 bg-violet-200" style={{ borderRadius: 8 }} />
                         )}
                         <span className="relative z-10">{tab.label}</span>
                       </button>

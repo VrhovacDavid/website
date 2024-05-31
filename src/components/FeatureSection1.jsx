@@ -38,10 +38,11 @@ export default function FeatureSection1() {
           Wir haben das Design nicht neu erfunden – wir haben es für dich optimiert. <br />Vergiss teure Agenturen und langwierige Prozesse. Mit TillTech erhältst du genau das Design, das du brauchst, genau dann, wenn du es brauchst.
 <br />Mit TillTech wird jedes Design zu einem Baustein deines Erfolgs. Starte jetzt und erlebe Design neu – schneller, einfacher und genau auf deine Bedürfnisse zugeschnitten."
           </p>
-        <a className=' rounded-md  bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100' href="/section1page">
-         
-        Jetzt Starten
-    
+          <a
+              href="#pricing"
+              className="rounded-md bg-violet-500 border-2 border-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm "
+            >
+              Jetzt Starten
             </a>
          
         </div>

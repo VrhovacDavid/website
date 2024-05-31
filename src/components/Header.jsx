@@ -136,13 +136,13 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="https://billing.stripe.com/p/login/28oaHy9m414Bfgk288"
-            className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100 mx-4"
+            className="rounded-md  px-3.5 py-2.5 text-sm font-semibold text-violet-500 border-2 border-violet-500  mx-4"
           >
             Kundenportal
           </a>
           <a
             href="/#pricing"
-            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm  border-2 border-violet-500 "
           >
             Jetzt Starten
           </a>
@@ -221,20 +221,19 @@ export default function Header() {
                 </a>
               </div>
               <div className="py-6">
-                <a
-                  href="https://billing.stripe.com/p/login/28oaHy9m414Bfgk288"
-                  className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100 mx-4"
-                  onClick={handleLinkClick}
-                >
-                  Kundenportal
-                </a>
-                <a
-                  href="/#pricing"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  onClick={handleLinkClick}
-                >
-                  Jetzt Starten
-                </a>
+              <a
+            href="https://billing.stripe.com/p/login/28oaHy9m414Bfgk288"
+            className="rounded-md  px-3.5 py-2.5 text-sm font-semibold text-violet-500 border-2 border-violet-500  mx-4"
+            onClick={handleLinkClick}>
+            Kundenportal
+          </a>
+          <a
+            href="/#pricing"
+            className="rounded-md bg-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm "
+            onClick={handleLinkClick} >
+            Jetzt Starten
+          </a>
+               
               </div>
             </div>
           </div>

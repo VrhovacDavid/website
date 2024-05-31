@@ -21,7 +21,7 @@ const data = [
     img: '/Portfolio/SFM.png',
   },
   {
-   href:'/nike',
+ 
     img: '/Portfolio/Nike.png',
   },
   {
