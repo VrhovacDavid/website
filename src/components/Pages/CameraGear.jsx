@@ -5,152 +5,152 @@ const products = [
         {
             "id": 1,
             "name": "Sony A7IV",
-            "href": "#",
+            "href": "https://amzn.to/3wWYfNA",
             "price": "2399.-",
-            "description": "Meine Hauptkamera. Ich filme alles damit; es ist bei Weitem die beste Kamera, die ich je besessen habe. Sie kommt einer Kinokamera sehr nahe, ohne jedoch eine zu sein.",
-            "options": "8 colors",
+            "description": "Meine Hauptkamera. Ich filme alles damit, es ist bei Weitem die beste Kamera, die ich je besessen habe. Sie kommt einer Kinokamera sehr nahe, ohne jedoch eine zu sein.",
+          
             "imageSrc": "https://www.dpreview.com/files/p/articles/9494401150/Product-Images/Sony_a7IV_3qtr.jpeg",
-            "imageAlt": "Eight shi^^rts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
+            "imageAlt": "Sony A7IV"
         },
         {
             "id": 2,
             "name": "Rode VideoMic NTG",
-            "href": "#",
+            "href": "https://amzn.to/4dWlBnj",
             "price": "$208.-",
             "description": "Mein Shotgun Mikrofon, für mein Run and Gun Setup perfekt",
-            "options": "Black",
+          
             "imageSrc": "https://www.mueller-spring.ch/media/image/product/3315/md/pa-dj-produkte-mikrophone-rode-videomic-ntg~5.jpg",
-            "imageAlt": "Front of pla^^in black t-shirt."
+            "imageAlt": "Rode VideoMic NTG"
         },
         {
             "id": 3,
             "name": "Rode Wireless GO 2",
-            "href": "#",
+            "href": "https://amzn.to/3Vxom7v",
             "price": "249.-",
             "description": "Mein Rund um Wireless Mikrofon, mit dem nehme ich alles auf von Content Creation bis hin zu Interviews, etc.",
-            "options": "Black",
+          
             "imageSrc": "https://www.allround-pc.com/wp-content/uploads/2021/04/Rode-Wireless-GO-2-Mikrofon-System-Testbericht-5.jpg",
-            "imageAlt": "Front ^^of plain  t-shirt."
+            "imageAlt": "Rode Wireless GO 2"
         },
         {
             "id": 4,
-            "name": "Basic 24",
-            "href": "#",
-            "price": "$32",
-            "description": "Look like a  CEO and wear the same black t-shirt every day.",
-            "options": "Black",
-            "imageSrc": "https://www.allround-pc.com/wp-content/uploads/2021/04/Rode-Wireless-GO-2-Mikrofon-System-Testbericht-5.jpg",
-            "imageAlt": "Front of^ plain black t-."
+            "name": "SmallRig Vibe P96L",
+            "href": "https://amzn.to/3x4tvdu",
+            "price": "56.-",
+            "description": "Videoleuchte für Produkt und Background",
+       
+            "imageSrc": "https://www.digitec.ch/im/productimages/9/0/2/8/3/7/6/7/6/5/6/4/6/9/6/5/5/7/0/20ded0f2-5530-4c37-bb3d-cd53484177c7_cropped.jpg?impolicy=ProductTileImage&resizeWidth=500&resizeHeight=375&cropWidth=500&cropHeight=375&resizeType=downsize&quality=high",
+            "imageAlt": "SmallRig Vibe P96L"
         },
         {
             "id": 5,
             "name": "SmallRig Full Cage Sony A7IV",
-            "href": "#",
+            "href": "https://amzn.to/3VkL5U4",
             "price": "68.-",
             "description": "Halterung von SmallRig hier kann ich alle Attachement's hinzufügen",
-            "options": "Optionen des Produkts",
+
             "imageSrc": "https://assets.brack.ch/images2/7/5/4/216073457/216073457_xxl.jpg",
-            "imageAlt": "Be^schreibender Text  Bild."
+            "imageAlt": "SmallRig Full Cage Sony A7IV"
         },
         {
             "id": 6,
             "name": "SmallRig Tripod AP-02",
-            "href": "#",
+            "href": "https://amzn.to/3VopEl8",
             "price": "109.-",
             "description": "Mein Stativ das ich auf Reisen mitnehme, oder allgemein für Content Creation, ich kann Landscape oder Portrait einstellen, und das Material ist auch Premium",
-            "options": "",
+     
             "imageSrc": "https://assets.brack.ch/images2/5/8/5/291669585/291669585_xxl.jpg",
-            "imageAlt": " Text zum Bild."
+            "imageAlt": "SmallRig Tripod AP-02"
         },
         {
             "id": 7,
             "name": "SmallRig RC 350D RC 120D COB LED",
-            "href": "#",
-            "price": "$Preis",
-            "description": "Dauerlicht, in einem Kombi Paket, perfekt mit der App und auch die Effekte sind genial.",
-            "options": "Optionen des Produkts",
+            "href": "https://amzn.to/3X2g20o",
+            "price": "800.-",
+            "description": "Dauerlicht, in einem Kombi Paket, perfekt mit der App und auch die Effekte sind super.",
+         
             "imageSrc": "https://www.digitec.ch/im/Files/7/3/8/1/2/3/8/3/257934173_xxl3.jpg?impolicy=ProductTileImage&resizeWidth=648&resizeHeight=486&cropWidth=648&cropHeight=486&resizeType=downsize&quality=high",
-            "imageAlt": "Beschreib^ender  zum Bild."
+            "imageAlt": "SmallRig RC 350D RC 120D COB LED"
         },
         {
             "id": 8,
             "name": "SmallRig Stativ RA-S280",
-            "href": "#",
+            "href": "https://amzn.to/3X3085R",
             "price": "57.-",
             "description": "Für meine Dauerlichter eine Halterung",
-            "options": "Optionen des Produkts",
+     
             "imageSrc": "https://assets.brack.ch/images2/8/3/5/229773538/229773538_xxl.jpg",
-            "imageAlt": "Beschreib^ender Text zum ."
+            "imageAlt": "SmallRig Stativ RA-S280"
         },
         {
             "id": 9,
             "name": "SmallRig Softbox RA-D55",
-            "href": "#",
+            "href": "https://amzn.to/3VnarAJ",
             "price": "45.-",
             "description": "Parabol Softbox für ein weiches Licht",
-            "options": "Optionen des Produkts",
+        
             "imageSrc": "https://assets.brack.ch/images2/6/5/6/229774656/229774656_xxl.jpg",
-            "imageAlt": "Beschrei^bender Text  ."
+            "imageAlt": "SmallRig Softbox RA-D55"
         },
         {
             "id": 10,
             "name": "DJI Mini 4 Pro",
-            "href": "#",
+            "href": "https://amzn.to/3wTQwzX",
             "price": "1028.-",
             "description": "Die beste 249g Drohne die ich jemals gehabt habe.",
-            "options": "Optionen des Produkts",
+            
             "imageSrc": "https://assets.brack.ch/images2/6/8/9/303556986/303556986_xxl.jpg",
-            "imageAlt": "Beschreib^ender  zum Bild."
+            "imageAlt": "DJI Mini 4 Pro"
         },
         {
             "id": 11,
             "name": "Manfrotto Fotorucksack Gear Backpack M III",
-            "href": "#",
+            "href": "https://amzn.to/3yPrLW0",
             "price": "104.-",
             "description": "Mein Fotorucksack, den nehme ich an jedes Shooting mit",
-            "options": "Optionen des Produkts",
+         
             "imageSrc": "https://assets.brack.ch/images2/4/5/5/214993554/214993554_xxl.jpg",
-            "imageAlt": "Besch^reibender Text zum Bild."
+            "imageAlt": "Manfrotto Fotorucksack Gear Backpack M III"
         },
         {
             "id": 12,
             "name": "SmallRig Cage AtomX 5inch Shinobi",
-            "href": "#",
+            "href": "https://amzn.to/4aLfQ97",
             "price": "76.-",
             "description": "Käfig für mein Atomos Shniobi Monitor",
-            "options": "Optionen des Produkts",
+    
             "imageSrc": "https://assets.brack.ch/images2/2/5/6/56174652/56174652_xxl.jpg",
-            "imageAlt": " Text ^ Bild."
+            "imageAlt": "SmallRig Cage AtomX 5inch Shinobi"
         },
         {
             "id": 13,
             "name": "Atomos Monitor Shinobi HDMI",
-            "href": "#",
+            "href": "https://amzn.to/4aHos0u",
             "price": "356.-",
             "description": "Falls ich mich selber sehen muss währen einer Aufnahme benutze ich den Atomos Monitor",
-            "options": "Optionen des Produkts",
+    
             "imageSrc": "https://assets.brack.ch/images2/2/8/8/57880882/57880882_xxl.jpg",
-            "imageAlt": " Text zum Bild."
+            "imageAlt": "Atomos Monitor Shinobi HDMI"
         },
         {
             "id": 14,
             "name": "SmallRig Monitor Halterung",
-            "href": "#",
+            "href": "https://amzn.to/4c2rOMO",
             "price": "33.-",
             "description": "Nach oben und unten verstellbarer Monitor halter für mein Atomos Shinobi",
-            "options": "Optionen des Produkts",
+      
             "imageSrc": "https://assets.brack.ch/images2/1/7/1/58385171/58385171_xxl.jpg",
-            "imageAlt": " Text ^ ^."
+            "imageAlt": "SmallRig Monitor Halterung"
         },
         {
             "id": 15,
             "name": "DJI Osmo Pocket 3 Creator Combo",
-            "href": "#",
+            "href": "https://amzn.to/450Qu61",
             "price": "623.-",
             "description": "Für aufnahmen unterwegs, oder wenns schnell gehen muss, einer der besten Kameras die benutzten durfte.",
-            "options": "Optionen des Produkts",
+   
             "imageSrc": "https://stormsend1.djicdn.com/tpc/uploads/carousel/image/af165fd726382501a5ed83a156b17783@ultra.jpg",
-            "imageAlt": " Text ^ ^."
+            "imageAlt": "DJI Osmo Pocket 3 Creator Combo"
         }
     ]
 

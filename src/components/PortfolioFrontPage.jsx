@@ -2,8 +2,8 @@
 const products = [
     {
       id: 1,
-      name: 'Mockup 1',
-      color: 'Twitch',
+      name: 'Instagram Story',
+      color: 'Blend',
       price: '$35',
       href: '#',
       imageSrc: '/Blend.svg',
@@ -12,8 +12,8 @@ const products = [
     },
     {
         id: 2,
-        name: 'Mockup 2',
-        color: 'Wallpaper',
+        name: 'Product 3D Modell',
+        color: 'Valentino',
         price: '$35',
         href: '#',
         imageSrc: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/244550197361593.662f83461160d.png',
@@ -22,8 +22,8 @@ const products = [
       },
       {
         id: 3,
-        name: 'Mockup 3',
-        color: 'Website',
+        name: 'Think Big',
+        color: 'Nike',
         price: '$35',
         href: '#',
         imageSrc:   '/Portfolio/Nike.png',
@@ -31,8 +31,8 @@ const products = [
      
       },    {
         id: 4,
-        name: 'Mockup 4',
-        color: '3D Modell',
+        name: 'Keyboard',
+        color: 'Yamaha',
         price: '$35',
         href: '#',
         imageSrc: '/3DImage.avif',
@@ -40,8 +40,8 @@ const products = [
      
       },    {
         id: 5,
-        name: 'Mockup 5',
-        color: 'Brutalism',
+        name: 'Brutalism',
+        color: 'Personal',
         price: '$35',
         href: '#',
         imageSrc: '/Brutalism.webp',

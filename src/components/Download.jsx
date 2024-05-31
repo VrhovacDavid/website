@@ -43,10 +43,10 @@ export default function Download() {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
              Gratis TillTech Icon Pack
               <br />
-              +1500 Icons
+              +200 Icons
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            A collection of funky vectorized scribbbles to spice up your design projects.
+           Eine Kollektion von +200 Icons in Vector und SVG formaten
             </p>
             <form ref={form} onSubmit={sendEmail}>
    <div className="mt-6 flex max-w-md gap-x-4">
@@ -65,9 +65,10 @@ export default function Download() {
           </div>
           <div className="relative mt-16 h-80 lg:mt-8">
             <img
+            loading='lazy'
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-              alt="App screenshot"
+              src="/Icons.svg"
+              alt="IconPack"
               width={1824}
               height={1080}
             />

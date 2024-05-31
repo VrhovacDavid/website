@@ -40,7 +40,7 @@ export default function FeatureSection1() {
           </p>
           <a
               href="#pricing"
-              className="rounded-md bg-violet-500 border-2 border-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm "
+              className="rounded-md bg-indigo-500 border-2 border-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm "
             >
               Jetzt Starten
             </a>

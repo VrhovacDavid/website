@@ -6,7 +6,7 @@ export const data = [
   {
     title: 'Gratis Download 🔥',
     alt: 'Downloads',
-    img: '/IconPack.png',
+    img: '/IconPack.svg',
     url: "/#downloads"
   },
   {
