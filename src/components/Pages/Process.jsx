@@ -150,6 +150,11 @@ const Process = () => {
               <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">Schritt 3</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dein Design-Briefing – ein Dialog, der inspiriert</p>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                 
+In diesem Schritt teilst du uns deine kreativen Visionen und spezifischen Anforderungen mit. Über unser benutzerfreundliches Trello-Board kannst du deine Ideen, Wünsche und Inspirationen klar und detailliert mitteilen. Dieser Dialog ist entscheidend, um sicherzustellen, dass unsere Designer dein Konzept vollständig verstehen und umsetzen können. Mit jedem Detail, das du hinzufügst, helfen wir dir, deine Vorstellungen in die Realität umzusetzen.
+                </p>
+
                 <dl className="mt-10 max-w-4xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   {features1.map((feature) => (
                     <div key={feature.name} className="relative pl-12">
