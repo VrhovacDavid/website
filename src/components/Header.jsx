@@ -89,7 +89,7 @@ export default function Header() {
               <Popover.Panel className="absolute inset-x-0 top-0 -z-10 bg-white pt-24 shadow-lg ring-1 ring-gray-900/5">
                 <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
                   {products.map((item) => (
-                    <div key={item.name} className="group relative rounded-lg p-6 text-sm leading-6 hover:bg-gray-50">
+                    <div key={item.name} className="group relative rounded-lg p-6 text-small leading-6 hover:bg-gray-50">
                       <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                       </div>
@@ -108,7 +108,7 @@ export default function Header() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                          className="flex items-center justify-center gap-x-2.5 p-3 text-small font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                           onClick={handleLinkClick}
                         >
                           <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
@@ -122,27 +122,27 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="/portfolio" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/portfolio" className="text-small font-semibold leading-6 text-gray-900">
             Portfolio
           </a>
-          <a href="/process" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/process" className="text-small font-semibold leading-6 text-gray-900">
             Prozess
           </a>
          
-          <a href="/#downloads" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/#downloads" className="text-small font-semibold leading-6 text-gray-900">
             Free Download 🔥
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="https://billing.stripe.com/p/login/28oaHy9m414Bfgk288"
-            className="rounded-md  px-3.5 py-2.5 text-sm font-semibold text-indigo-500 border-2 border-indigo-500  mx-4"
+            className="rounded-md  px-3.5 py-2.5 text-small font-semibold text-indigo-500 border-2 border-indigo-500  mx-4"
           >
             Kundenportal
           </a>
           <a
             href="/#pricing"
-            className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm  border-2 border-indigo-500 "
+            className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-small font-semibold text-white shadow-sm  border-2 border-indigo-500 "
           >
             Jetzt Starten
           </a>
@@ -186,7 +186,7 @@ export default function Header() {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-medium leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-small font-medium leading-7 text-gray-900 hover:bg-gray-50"
                             onClick={handleLinkClick}
                           >
                             {item.name}
@@ -223,13 +223,13 @@ export default function Header() {
               <div className="py-6">
               <a
             href="https://billing.stripe.com/p/login/28oaHy9m414Bfgk288"
-            className="rounded-md  px-3.5 py-2.5 text-sm font-semibold text-indigo-500 border-2 border-indigo-500  mx-4"
+            className="rounded-md  px-3.5 py-2.5 text-small font-semibold text-indigo-500 border-2 border-indigo-500  mr-4"
             onClick={handleLinkClick}>
             Kundenportal
           </a>
           <a
             href="/#pricing"
-            className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm "
+            className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-small font-semibold text-white shadow-sm "
             onClick={handleLinkClick} >
             Jetzt Starten
           </a>

@@ -130,13 +130,13 @@ const Links = () => {
             </div>
             <div >
               <div className="pt-6 flex flex-row justify-center items-center gap-1">
-                <p className="text-gray-500 text-lg">TillTech</p>
+                <p className="text-gray-500 text-sup font-semibold">TillTech</p>
                 <CheckBadgeIcon className="h-5 w-5 text-sky-500 stroke-white" />
               </div>
 
             </div>
             <div >
-              <p className='text-center mt-4 text-gray-500'>
+              <p className='text-center text-base mt-4 text-gray-500'>
                 Designer und Software Entwickler aus der Schweiz. Ich erstelle Design's, Webseiten & Software für Firmen Privatpersonen und teile meinen kreativen Prozess online.
               </p>
             </div>
@@ -166,7 +166,7 @@ const Links = () => {
                   </a>
                   {/* Overlay Text */}
                   <div className=" z-10 p-4 text-left absolute bottom-0 left-0">
-                    <h2 className='text-sm font-semibold text-white'>{item.title}</h2>
+                    <p className='text-small font-semibold text-white'>{item.title}</p>
 
                   </div>
                 </div>

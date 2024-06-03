@@ -118,10 +118,10 @@ export default function Portfolio() {
             <div className="mx-auto max-w-7xl pb-16 ">
 
               <div className="text-start">
-                <h1 className=" text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h1 className=" text-h1 leading-10 font-bold tracking-tight text-gray-900 sm:text-6xl">
                   Graphic Design Portfolio
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-6 sm:text-sup text-base  text-gray-600">
                   Das sind unsere neusten Arbeiten. Noch mehr arbeiten findest du auf meinen Sozialen Medien! 👇          </p>
                 
               </div>
