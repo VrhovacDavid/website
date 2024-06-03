@@ -49,7 +49,7 @@ export default function Mitgliedschaftsvorteile() {
           <div className="mx-auto max-w-4xl lg:max-w-2xl lg:mx-0">
             <p className="text-small font-semibold leading-7 text-indigo-500">Deine Vorteile</p>
             <h3 className="mt-2 text-h3 leading-10 font-bold tracking-tight text-black ">Vorteile einer Mitgliedschaft bei TillTech</h3>
-            <p className="mt-6 text-sup  text-black">
+            <p className="mt-6 text-base sm:text-sup text-black">
               So überzeugend, dass du nie wieder woanders hingehen wirst – garantiert.          </p>
 
           </div>

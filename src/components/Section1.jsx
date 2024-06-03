@@ -71,7 +71,7 @@ const Section1 = () => {
         <div className='max-w-7xl'>
           <p className="text-small font-semibold  text-indigo-600">"Einmal TillTech, immer TillTech" – besser geht's nicht.</p>
           <h3 className="mt-2 text-h3 font-bold tracking-tight text-gray-900 ">Für dich Optimiert</h3>
-          <p className="mt-6 text-sup  text-gray-600">
+          <p className="mt-6 text-base sm:text-sup  text-gray-600">
             Wir revolutionieren das Design-Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. Unsere Designs kommen so schnell und sind so überzeugend, dass sie nicht nur deine Erwartungen erfüllen, sondern diese weit übertreffen.
           </p>
 

@@ -35,7 +35,7 @@ export default function Testimonials() {
           <h3 className="mt-2 text-h3 font-bold leading-10 tracking-tight text-gray-900 sm:text-4xl pb-4">
             Design Kundenfeedback
           </h3>
-          <p className="mx-auto max-w-7xl text-sup text-gray-600">
+          <p className="mx-auto max-w-7xl text-base sm:text-sup text-gray-600">
           Wir hatten das Möglichkeit, mit vielen inspirierenden Menschen zusammenzuarbeiten.
             </p>
         </div>

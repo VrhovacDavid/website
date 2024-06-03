@@ -50,7 +50,7 @@ export default function Example() {
           <h1 className="mt-2 text-h1 leading-10 sm:text-6xl font-bold tracking-tight text-gray-900 pt-2">
             Die neue Generation des Design's
           </h1>
-          <p className="mt-6 text-sup text-gray-600">
+          <p className="mt-6 text-base sm:text-sup text-gray-600">
             Wir bieten dir eine riesige Auswahl an Grafik Design, Programmierungen, Webdesign Service und mehr an, für eine monatliche Gebühr die du jederzeit pausieren oder kündigen kannst.
           </p>
           <div className="mt-10 flex items-center gap-x-6">

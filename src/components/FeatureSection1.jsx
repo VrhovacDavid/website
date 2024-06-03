@@ -34,7 +34,7 @@ export default function FeatureSection1() {
           <h2 className="text-h2 font-bold tracking-tight text-gray-900 leading-10 ">
           Verwandle deine Vision in Wirklichkeit – schneller als je zuvor.
           </h2>
-          <p className="mt-6 mb-8 text-sup  text-gray-600">
+          <p className="mt-6 mb-8 text-base sm:text-sup  text-gray-600">
           Wir haben das Design nicht neu erfunden – wir haben es für dich optimiert. <br />Vergiss teure Agenturen und langwierige Prozesse. Mit TillTech erhältst du genau das Design, das du brauchst, genau dann, wenn du es brauchst.
 <br />Mit TillTech wird jedes Design zu einem Baustein deines Erfolgs. Starte jetzt und erlebe Design neu – schneller, einfacher und genau auf deine Bedürfnisse zugeschnitten."
           </p>

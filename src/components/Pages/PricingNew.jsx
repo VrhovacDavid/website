@@ -37,7 +37,7 @@ export default function PricingNew() {
             </h3>
           </div>
           <div className="relative mt-6">
-            <p className="mx-auto max-w-7xl text-sup  text-white/60">
+            <p className="mx-auto max-w-7xl text-base sm:text-sup  text-white/60">
               Bei TillTech verstehen wir, dass jedes Projekt einzigartig ist – genau wie dein Budget. Deshalb bieten wir maßgeschneiderte Abonnements, die dir die Freiheit geben, deine Designs nach Bedarf zu skalieren. Wähle den Plan, der am besten zu deinen aktuellen Anforderungen passt, und erlebe, wie einfach und vorhersehbar die Kostenkontrolle sein kann.
             </p>
             <svg
