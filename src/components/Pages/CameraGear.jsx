@@ -16,7 +16,7 @@ const products = [
             "id": 2,
             "name": "Rode VideoMic NTG",
             "href": "https://amzn.to/4dWlBnj",
-            "price": "$208.-",
+            "price": "208.-",
             "description": "Mein Shotgun Mikrofon, für mein Run and Gun Setup perfekt",
           
             "imageSrc": "https://www.mueller-spring.ch/media/image/product/3315/md/pa-dj-produkte-mikrophone-rode-videomic-ntg~5.jpg",
@@ -172,11 +172,11 @@ export default function CameraGear() {
         <div className=" mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 ">
           <div className="lg:pr-8 lg:pt-4 content-center align-middle justify-center">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">Content Creation Kit</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Essential Video Kits von TillTech</p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="text-small font-semibold  text-indigo-600">Content Creation Kit</p>
+              <h1 className="mt-2 text-h1 font-bold tracking-tight text-gray-900 leading-10">Essential Video Kits von TillTech</h1>
+              <p className="mt-6 sm:text-sup text-base text-gray-600">
               Hier ist mein unverzichtbares Video-Set; alle meine Videos drehe ich mit dieser Ausrüstung.
-              </p>   <p className="mt-6 text-lg leading-8 text-gray-600">
+              </p>   <p className="mt-6 sm:text-sup text-base  text-gray-600">
               Hinweis: Einige der bereitgestellten Links sind Affiliate Links. Wenn du über diese Links etwas kaufst, erhalte ich eine kleine Provision, ohne dass für dich zusätzliche Kosten entstehen. Das unterstützt mich enorm dabei, weiterhin das zu tun, was ich liebe. Vielen Dank. 🙏
               </p>
               
@@ -202,9 +202,9 @@ export default function CameraGear() {
                     {products[0].map((product) => ( // Geändert zu products[0] um direkt das Produktarray zu nutzen
                         <div
                             key={product.id} // Stellt sicher, dass jeder Schlüssel einzigartig ist
-                            className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg"
+                            className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-lg  hover:shadow-xl"
                         >
-                            <div className="aspect-h-1 aspect-w-1 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96 ">
+                            <div className="aspect-h-1 aspect-w-1 bg-gray-200 sm:aspect-none sm:h-96 ">
                                 <img
                                     src={product.imageSrc}
                                     alt={product.imageAlt}
@@ -212,18 +212,18 @@ export default function CameraGear() {
                                 />
                             </div>
                             <div className="flex flex-1 flex-col space-y-2 p-4">
-                                <h3 className="text-sm font-medium text-gray-900">
+                                <h3 className="sm:text-sup text-base font-medium text-gray-900">
                                     <a href={product.href}>
                                         <span aria-hidden="true" className="absolute inset-0" />
                                         {product.name}
                                     </a>
                                 </h3>
-                                <p className="text-sm text-gray-500">{product.description}</p>
+                                <p className="text-small text-gray-500">{product.description}</p>
                                 <div className="flex flex-1 flex-col justify-end">
-                                    <p className="text-base font-medium text-gray-900">{product.price}</p>
+                                    <p className="sm:text-sup text-base font-medium text-gray-900 py-4">{product.price}</p>
                                     <button
                                         type="button"
-                                        className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
+                                        className="rounded-md bg-indigo-50 px-3.5 py-2.5 text-small font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100"
                                     >
                                         Bei Amazon Kaufen
                                     </button>
