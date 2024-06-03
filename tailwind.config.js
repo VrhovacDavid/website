@@ -15,6 +15,18 @@ module.exports = {
 
       
       },
+      fontSize: {
+        'sup': '18px',
+        'base': '16px',     // Paragraph
+        'h1': '47.78px',
+        'h2': '39.81px',
+        'h3': '33.18px',
+        'h4': '27.65px',
+        'h5': '23.04px',
+        'h6': '19.2px',
+        'small': '13.33px', // Small Text
+        'smaller': '11.11px' // Text unter Small
+      },
      
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],

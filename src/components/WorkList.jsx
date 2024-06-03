@@ -354,15 +354,15 @@ const tabs = [
     return (
       <div ref={sectionRef} className="overflow-hidden bg-transparent py-24 sm:py-32" id="dienstleistungen">
         <div className="mx-auto lg:max-w-7xl max-w-4xl px-6 lg:px-8">
-          <div className="max-w-7xl text-start pb-4">
-            <p className="text-sm font-semibold leading-7 text-indigo-600">Unsere Dienstleistungen – Deine kreative Spielwiese</p>
-            <h3 className="mt-2 text-4xl font-bold tracking-tight text-gray-900">Entdecke die Vielfalt unserer Designleistungen</h3>
-            <p className="mt-6 text-start text-base text-gray-600">
+          <div className="max-w-7xl text-start pb-8">
+            <p className="text-small font-semibold  text-indigo-600">Unsere Dienstleistungen – Deine kreative Spielwiese</p>
+            <h3 className="mt-2 text-h3 font-bold tracking-tight text-gray-900 leading-10">Entdecke die Vielfalt unserer Designleistungen</h3>
+            <p className="mt-6 text-start text-sup text-gray-600">
               Bei TillTech bieten wir dir ein breites Spektrum an Designservices, die darauf abgestimmt sind, jede deiner kreativen Anforderungen zu erfüllen. Von der ersten Skizze bis zum finalen Produkt, unsere maßgeschneiderten Lösungen decken alles ab. Egal, ob du frische Ideen für dein Branding brauchst, eine neue Website gestalten möchtest oder innovative App-Designs suchst – wir sind dein zuverlässiger Partner.
             </p>
           </div>
   
-          <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <div>
@@ -372,7 +372,7 @@ const tabs = [
                         key={tab.id}
                         ref={el => tabRefs.current[index] = el}
                         onClick={() => handleTabClick(tab.id)}
-                        className={`${activeTab === tab.id ? " text-indigo-700" : "hover:text-gray-700"} relative rounded-md px-4 py-2 text-sm text-gray-500 whitespace-nowrap`}
+                        className={`${activeTab === tab.id ? " text-indigo-700" : "hover:text-gray-700"} relative rounded-md px-4 py-2 text-base text-gray-500 whitespace-nowrap`}
                       >
                         {activeTab === tab.id && (
                           <motion.div layoutId='active-pill' className="absolute inset-0 bg-indigo-100" style={{ borderRadius: 8 }} />

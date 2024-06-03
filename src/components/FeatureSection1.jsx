@@ -31,16 +31,16 @@ export default function FeatureSection1() {
     <div className="bg-transparent py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl lg:max-w-7xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 ">
+          <h2 className="text-h2 font-bold tracking-tight text-gray-900 leading-10 ">
           Verwandle deine Vision in Wirklichkeit – schneller als je zuvor.
           </h2>
-          <p className="mt-6 mb-8 text-base  text-gray-600">
+          <p className="mt-6 mb-8 text-sup  text-gray-600">
           Wir haben das Design nicht neu erfunden – wir haben es für dich optimiert. <br />Vergiss teure Agenturen und langwierige Prozesse. Mit TillTech erhältst du genau das Design, das du brauchst, genau dann, wenn du es brauchst.
 <br />Mit TillTech wird jedes Design zu einem Baustein deines Erfolgs. Starte jetzt und erlebe Design neu – schneller, einfacher und genau auf deine Bedürfnisse zugeschnitten."
           </p>
           <a
               href="#pricing"
-              className="rounded-md bg-indigo-500 border-2 border-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm "
+              className="rounded-md bg-indigo-500 border-2 border-indigo-500 px-3.5 py-2.5 text-small font-semibold text-white shadow-sm "
             >
               Jetzt Starten
             </a>
@@ -54,7 +54,7 @@ export default function FeatureSection1() {
                   <div className="mb-6 flex  items-start justify-start rounded-lg ">
                     <img className=' h-12 w-12' src={feature.icon} alt="asdf" />
                   </div>
-                 <p className='text-lg'>{feature.name}</p>
+                 <p className='text-sup'>{feature.name}</p>
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base  text-gray-600">
                   <p className="flex-auto">{feature.description}</p>

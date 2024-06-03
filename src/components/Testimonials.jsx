@@ -31,24 +31,27 @@ export default function Testimonials() {
      
       <div className="mx-auto max-w-4xl lg:max-w-7xl px-6 lg:px-8 ">
         <div className="max-w-4xl text-start">
-          <p className="text-sm font-semibold leading-8 tracking-tight text-indigo-600">Kunden Feedback</p>
-          <h3 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Wir hatten das Möglichkeit, mit vielen inspirierenden Menschen zusammenzuarbeiten.
+          <p className="text-small font-semibold leading-8 tracking-tight text-indigo-600">Zufriedene Kunden</p>
+          <h3 className="mt-2 text-h3 font-bold tracking-tight text-gray-900 sm:text-4xl pb-4">
+            Design Kundenfeedback
           </h3>
+          <p className="mx-auto max-w-7xl text-sup leading-8 text-gray-600">
+          Wir hatten das Möglichkeit, mit vielen inspirierenden Menschen zusammenzuarbeiten.
+            </p>
         </div>
         <div className="mx-auto mt-16 flow-root max-w-none sm:mt-20">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="pt-8">
-                <figure className="rounded-2xl bg-white p-8 text-sm leading-6">
+                <figure className="rounded-2xl bg-white p-8 text-base leading-6">
                   <blockquote className="text-gray-900">
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-x-4">
                     <img className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt={testimonial.author.name} />
                     <div>
-                      <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
-                      <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                      <div className="font-semibold text-gray-900 text-base">{testimonial.author.name}</div>
+                      <div className="text-gray-600 text-small">{`@${testimonial.author.handle}`}</div>
                     </div>
                   </figcaption>
                 </figure>

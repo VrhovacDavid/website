@@ -11,6 +11,7 @@ import Services from "./components/Pages/Services"
 import Kontakt from "./components/Pages/Kontakt"
 import NoPage from "./components/Pages/404"
 import Nike from "./components/Portfolio/Nike"
+import CookieConsent from "./components/Legal/CookieConsent"
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
    <Routes>
     <Route index element={<Home/>}/>
     <Route path='/' element={<Home/>}/>
+    <Route path='/cookieconsent' element={<CookieConsent/>}/>
     <Route path='/datenschutz' element={<Datenschutz/>}/>
     <Route path='/impressum' element={<Impressum/>}/>
     <Route path='/agb' element={<AGB/>}/>
@@ -34,6 +36,7 @@ const App = () => {
     <Route path='/kontakt' element={<Kontakt/>}/>
     <Route path='/nike' element={<Nike/>}/>
     <Route path='*' element={<NoPage/>}/>
+   
 
 
    </Routes>

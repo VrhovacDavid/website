@@ -57,8 +57,8 @@ const products = [
       <div className=" bg-transparent " id='portfolio' >
       <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8 ">
         <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
-          <h3 className="text-4xl font-bold tracking-tight text-gray-900">Portfolio</h3>
-          <a href="/portfolio" className="text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+          <h3 className="text-h3 font-bold tracking-tight text-gray-900">Portfolio</h3>
+          <a href="/portfolio" className="text-small font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
             Ganzes Portfolio ansehen <span aria-hidden="true"> &rarr;</span>
           </a>
         </div>
@@ -81,8 +81,8 @@ const products = [
                       />
                     </div>
                     <div className="mt-6">
-                      <p className="text-sm text-gray-500">{product.color}</p>
-                      <h4 className="mt-1 text-lg font-semibold text-gray-900">
+                      <p className="text-small text-gray-500">{product.color}</p>
+                      <h4 className="mt-1 text-base font-semibold text-gray-900">
                         <a href={product.href}>
                           <span className="absolute inset-0" />
                           {product.name}

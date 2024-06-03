@@ -53,9 +53,16 @@ export default function FAQ() {
   return (
     <div className="pattern-bg-primary " id='faq'>
        
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40 ">
+      <div className="mx-auto max-w-4xl lg:max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40  ">
+        <div className=' '>
+        <p className="text-small font-semibold  text-indigo-400">Alles was du wissen musst</p>
+            <h3 className="mt-2 text-h3 font-bold leading-10 tracking-tight text-black ">
+              Häufig gestellte Fragen
+            </h3>
+        </div>
+    
         <div className="mx-auto max-w-4xl lg:max-w-7xl divide-y divide-gray-900/10">
-          <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Häufig gestellte Fragen</h2>
+        
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
@@ -63,7 +70,7 @@ export default function FAQ() {
                   <>
                     <dt>
                       <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
-                        <span className="text-base font-semibold leading-7">{faq.question}</span>
+                        <span className="text-sup  ">{faq.question}</span>
                         <span className="ml-6 flex h-7 items-center">
                           {open ? (
                             <MinusSmallIcon className="h-6 w-6" aria-hidden="true" />

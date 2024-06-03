@@ -69,21 +69,21 @@ const Section1 = () => {
     <div className="overflow-hidden bg-transparent py-24 sm:py-32" id='prozess'>
       <div className="mx-auto max-w-4xl lg:max-w-7xl px-6 lg:px-8">
         <div className='max-w-7xl'>
-          <p className="text-sm font-semibold leading-7 text-indigo-600">"Einmal TillTech, immer TillTech" – besser geht's nicht.</p>
-          <h3 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 ">Für dich Optimiert</h3>
-          <p className="mt-6 text-base  text-gray-600">
+          <p className="text-small font-semibold  text-indigo-600">"Einmal TillTech, immer TillTech" – besser geht's nicht.</p>
+          <h3 className="mt-2 text-h3 font-bold tracking-tight text-gray-900 ">Für dich Optimiert</h3>
+          <p className="mt-6 text-sup  text-gray-600">
             Wir revolutionieren das Design-Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. Unsere Designs kommen so schnell und sind so überzeugend, dass sie nicht nur deine Erwartungen erfüllen, sondern diese weit übertreffen.
           </p>
 
           <div className="mt-10 flex items-center gap-x-6">
             <a
               href="#pricing"
-              className="rounded-md bg-indigo-500 border-2 border-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
+              className="rounded-md bg-indigo-500 border-2 border-indigo-500 px-3.5 py-2.5 text-small font-semibold text-white shadow-sm"
             >
               Jetzt Starten
             </a>
-            <a href="/Process" className="rounded-md  px-3.5 py-2.5 text-sm font-semibold text-indigo-500 border-2 border-indigo-500">
-              Wie funktioniert TillTech? <span aria-hidden="true">→</span>
+            <a href="/Process" className="rounded-md  px-3.5 py-2.5 text-small font-semibold text-indigo-500 border-2 border-indigo-500">
+            Unser Prozess <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
@@ -92,14 +92,14 @@ const Section1 = () => {
           {/* Left column with text */}
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <ul className="mt-10 max-w-xl space-y-8 text-lg  text-black lg:max-w-none">
+              <ul className="mt-10 max-w-xl space-y-8  text-black lg:max-w-none">
                 {content[0].points.map((point, index) => (
                   <li key={index} className='cursor-pointer' onClick={() => handlePointClick(index)}>
                     <div className="flex items-center relative pl-12">
                       <img className='absolute left-1 h-10 w-10' src={point.icon} alt="Icon" />
-                      <span className={`cursor-pointer ${index === highlightedPointIndex ? ' font-bold' : 'text-lg'} transition-all duration-300`}>{point.text}</span>
+                      <span className={`cursor-pointer ${index === highlightedPointIndex ? ' font-bold' : 'text-sup'} text-sup transition-all duration-300`}>{point.text}</span>
                     </div>
-                    <p className="text-base text-gray-600 mt-1">{point.description}</p>
+                    <p className="text-base text-gray-600 mt-4">{point.description}</p>
                   </li>
                 ))}
               </ul>

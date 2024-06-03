@@ -42,25 +42,25 @@ export default function Example() {
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-600"></span>
                 </span>
               </div>
-              <span className="text-xs font-semibold text-indigo-600">
+              <span className="text-small font-semibold text-indigo-600 ">
                 Wenig Plätze verfügbar
               </span>
             </div>
           </div>
-          <h1 className="mt-2 text-5xl sm:text-6xl font-bold tracking-tight text-gray-900">
+          <h1 className="mt-2 text-h1 leading-10 sm:text-6xl font-bold tracking-tight text-gray-900 pt-2">
             Die neue Generation des Design's
           </h1>
-          <p className="mt-6 text-lg text-gray-600">
+          <p className="mt-6 text-sup text-gray-600">
             Wir bieten dir eine riesige Auswahl an Grafik Design, Programmierungen, Webdesign Service und mehr an, für eine monatliche Gebühr die du jederzeit pausieren oder kündigen kannst.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
               href="#pricing"
-              className="rounded-md bg-indigo-500 border-2 border-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm "
+              className="rounded-md bg-indigo-500 border-2 border-indigo-500 px-3.5 py-2.5 text-small font-semibold text-white shadow-sm "
             >
               Jetzt Starten
             </a>
-            <a href="#prozess" className=" rounded-md  px-3.5 py-2.5 text-sm font-semibold text-indigo-500 border-2 border-indigo-500 ">
+            <a href="#prozess" className=" rounded-md  px-3.5 py-2.5 text-small font-semibold text-indigo-500 border-2 border-indigo-500 ">
               Mehr erfahren <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -69,7 +69,8 @@ export default function Example() {
           <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
             <video
               ref={videoRef}
-              src={isVisible ? "/HeroVideoLong.webm" : undefined}
+              src={isVisible ? "/HeroVideoLong.webm" : undefined} 
+              
               width={2432}
               height={1442}
               controls

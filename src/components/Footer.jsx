@@ -31,7 +31,7 @@ const navigation = {
       { name: 'Datenschutz' ,href: '/datenschutz' },
       { name: 'AGB' ,href: '/agb' },
       { name: 'Impressum' ,href: '/impressum' },
-      { name: 'Cookie Richtlinie' ,href: '/datenschutz' },
+      { name: 'Cookie Richtlinie' ,href: '/cookieconsent' },
 
     ],
     social: [
@@ -118,7 +118,7 @@ const navigation = {
                 src="/Logo.svg"
                 alt="TillTech"
               />
-              <p className="text-sm leading-6 text-gray-600">
+              <p className="text-small leading-6 text-gray-600">
               Die Welt besser machen durch neue Designs.
               </p>
               <div className="flex space-x-6">
@@ -133,11 +133,11 @@ const navigation = {
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold leading-6 text-gray-900">Nützliche Links</h3>
+                  <h3 className="text-base font-semibold leading-6 text-gray-900">Nützliche Links</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.solutions.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                        <a href={item.href} className="text-small leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
                         </a>
                       </li>
@@ -145,11 +145,11 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-gray-900">Meine Links</h3>
+                  <h3 className="text-base font-semibold leading-6 text-gray-900">Meine Links</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.support.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                        <a href={item.href} className="text-small leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
                         </a>
                       </li>
@@ -159,11 +159,11 @@ const navigation = {
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold leading-6 text-gray-900">Für Kunden</h3>
+                  <h3 className="text-base font-semibold leading-6 text-gray-900">Für Kunden</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.company.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                        <a href={item.href} className="text-small leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
                         </a>
                       </li>
@@ -171,7 +171,7 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-10 md:mt-0">
-                  <h3 className="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
+                  <h3 className="text-base font-semibold leading-6 text-gray-900">Legal</h3>
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.legal.map((item) => (
          
@@ -180,7 +180,7 @@ const navigation = {
 
       
       
-                        <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                        <a href={item.href} className="text-small leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
                         </a>
                  
@@ -192,7 +192,7 @@ const navigation = {
             </div>
           </div>
           <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-            <p className="text-xs leading-5 text-gray-500">&copy; 2024 TillTech GmbH, All rights reserved.</p>
+            <p className="text-small leading-5 text-gray-500">&copy; 2024 TillTech GmbH, All rights reserved.</p>
           </div>
         </div>
       </footer>
