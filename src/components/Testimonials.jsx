@@ -31,11 +31,11 @@ export default function Testimonials() {
      
       <div className="mx-auto max-w-4xl lg:max-w-7xl px-6 lg:px-8 ">
         <div className="max-w-4xl text-start">
-          <p className="text-small font-semibold leading-8 tracking-tight text-indigo-600">Zufriedene Kunden</p>
-          <h3 className="mt-2 text-h3 font-bold tracking-tight text-gray-900 sm:text-4xl pb-4">
+          <p className="text-small font-semibold  tracking-tight text-indigo-600">Zufriedene Kunden</p>
+          <h3 className="mt-2 text-h3 font-bold leading-10 tracking-tight text-gray-900 sm:text-4xl pb-4">
             Design Kundenfeedback
           </h3>
-          <p className="mx-auto max-w-7xl text-sup leading-8 text-gray-600">
+          <p className="mx-auto max-w-7xl text-sup text-gray-600">
           Wir hatten das Möglichkeit, mit vielen inspirierenden Menschen zusammenzuarbeiten.
             </p>
         </div>

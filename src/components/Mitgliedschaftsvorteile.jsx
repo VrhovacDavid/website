@@ -53,12 +53,12 @@ export default function Mitgliedschaftsvorteile() {
               So überzeugend, dass du nie wieder woanders hingehen wirst – garantiert.          </p>
 
           </div>
-          <dl className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-8 text-base leading-7 text-black sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+          <dl className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-8 text-base  text-black sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
             {features.map((feature) => (
 
               <div key={feature.name} className="flex flex-col items-start">
                 <div className="flex items-center">
-                  <img className=' h-10 w-10' src={feature.icon} alt="asdf" />
+                  <img className=' h-10 w-10 mr-2' src={feature.icon} alt="asdf" />
 
 
 
@@ -66,7 +66,7 @@ export default function Mitgliedschaftsvorteile() {
                     {feature.name}
                   </dt>
                 </div>
-                <dd className="mt-1 text-base text-gray-600">{feature.description}</dd>
+                <dd className="mt-2 text-base text-gray-600">{feature.description}</dd>
 
               </div>
             ))}

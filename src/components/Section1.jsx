@@ -112,6 +112,8 @@ const Section1 = () => {
               <motion.video
                 key={index}
                 ref={(el) => (videoRefs.current[index] = el)}
+playsInline
+
                 src={image}
                 className={`${index === highlightedPointIndex ? 'block' : 'hidden'} lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10`}
                 initial={{ opacity: 0 }}

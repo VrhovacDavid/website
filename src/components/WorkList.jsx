@@ -406,6 +406,7 @@ const tabs = [
   
             <div>
               <LazyVideo
+              playsInline
                 key={activeTab}
                 src={activeTabData.image}
                 alt={activeTabData.label}
