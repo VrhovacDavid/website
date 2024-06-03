@@ -53,7 +53,7 @@ export default function Example() {
           <p className="mt-6 text-base sm:text-sup text-gray-600">
             Wir bieten dir eine riesige Auswahl an Grafik Design, Programmierungen, Webdesign Service und mehr an, für eine monatliche Gebühr die du jederzeit pausieren oder kündigen kannst.
           </p>
-          <div className="mt-10 flex items-center gap-x-6">
+          <div className="mt-8 flex items-center gap-x-6">
             <a
               href="#pricing"
               className="rounded-md bg-indigo-500 border-2 border-indigo-500 px-3.5 py-2.5 text-small font-semibold text-white shadow-sm "

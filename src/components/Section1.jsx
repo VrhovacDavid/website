@@ -66,7 +66,7 @@ const Section1 = () => {
   };
 
   return (
-    <div className="overflow-hidden bg-transparent py-24 sm:py-32" id='prozess'>
+    <div className="overflow-hidden bg-transparent py-16 sm:py-32" id='prozess'>
       <div className="mx-auto max-w-4xl lg:max-w-7xl px-6 lg:px-8">
         <div className='max-w-7xl'>
           <p className="text-small font-semibold  text-indigo-600">"Einmal TillTech, immer TillTech" – besser geht's nicht.</p>
