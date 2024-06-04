@@ -69,24 +69,19 @@ export default function Example() {
           <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
             <video
               ref={videoRef}
+              src={isVisible ? "/HeroVideoLong.webm" : undefined} 
+   
+            
+              
+playsInline
               width={2432}
               height={1442}
               controls
               autoPlay
               loop
               muted
-              playsInline
               className="w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10"
-              loading="lazy"
-            >
-              {isVisible && (
-                <>
-                  <source src="/HeroVideoLong.mp4" type="video/mp4" />
-                  <source src="/HeroVideoLong.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </>
-              )}
-            </video>
+            />
           </div>
         </div>
       </div>
