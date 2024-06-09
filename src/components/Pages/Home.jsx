@@ -19,11 +19,6 @@ import { useLocation } from 'react-router-dom';
 
 const Home = () => {
 
-
-
-
- 
-
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
