@@ -7,8 +7,8 @@ const tiers = [
     id: 'tier-hobby',
     href: 'https://buy.stripe.com/6oE6pP0Vs611gXCfZ6',
     priceMonthly: `3955.-`,
-    description: 'Eine Anfrage gleichzeitig. Jederzeit pausieren oder kündigen.',
-    features: ['Eine Anfrage gleichzeitig', 'Lieferzeit von 24-48 Stunden', 'Unbegrenzte Marken', 'React (Java Script) Entwicklung', 'Unbegrenzte Stockfotos', 'Unbegrenzte Benutzer', 'Jederzeit pausieren oder kündigen'],
+    description: 'Eine Anfrage auf einmal. Jederzeit pausieren oder kündigen.',
+    features: ['Eine Anfrage auf einmal', 'Lieferzeit von 24-48 Stunden', 'Unbegrenzte Designs', 'React (Java Script) Entwicklung', 'Unbegrenzte Stockfotos', 'Unbegrenzte Teams', 'Jederzeit pausieren oder kündigen'],
   },
   {
     slots: '1 Platz',
@@ -16,9 +16,9 @@ const tiers = [
     id: 'tier-team',
     href: 'https://buy.stripe.com/cN2aG57jQ0GH6iYbIR',
     priceMonthly: `4955.-`,
-    description: 'Zwei Anfragen gleichzeitig. Jederzeit pausieren oder kündigen.',
+    description: 'Zwei Anfragen auf einmal. Jederzeit pausieren oder kündigen.',
     features: [
-      'Zwei Anfragen gleichzeitig', 'Lieferzeit von 24-48 Stunden', 'Unbegrenzte Marken', 'React (Java Script) Entwicklung', 'Unbegrenzte Stockfotos', 'Unbegrenzte Benutzer', 'Jederzeit pausieren oder kündigen'
+      'Zwei Anfragen auf einmal', 'Lieferzeit von 24-48 Stunden', 'Unbegrenzte Designs', 'React (Java Script) Entwicklung', 'Unbegrenzte Stockfotos', 'Unbegrenzte Teams', 'Jederzeit pausieren oder kündigen'
     ],
   },
 ]
@@ -38,7 +38,7 @@ export default function PricingNew() {
           </div>
           <div className="relative mt-6">
             <p className="mx-auto max-w-7xl text-base sm:text-sup  text-white/60">
-              Bei TillTech verstehen wir, dass jedes Projekt einzigartig ist – genau wie dein Budget. Deshalb bieten wir maßgeschneiderte Abonnements, die dir die Freiheit geben, deine Designs nach Bedarf zu skalieren. Wähle den Plan, der am besten zu deinen aktuellen Anforderungen passt, und erlebe, wie einfach und vorhersehbar die Kostenkontrolle sein kann.
+              Jedes Projekt ist einzigartig! Desswegen bieten wir maßgeschneiderte Abonnements, die dir die Freiheit geben, deine Designs nach Bedarf zu skalieren. Wähle den Plan, der am besten zu deinen aktuellen Anforderungen passt.
             </p>
             <svg
               viewBox="0 0 1208 1024"
@@ -126,7 +126,7 @@ export default function PricingNew() {
                   <div className="lg:min-w-0 lg:flex-1">
                     <h3 className="text-h6 font-semibold tracking-tight text-indigo-600">Empfehlen einen Freund und verdiene</h3>
                     <p className="mt-1 text-base  text-gray-600">
-                      Verdiene 5 % monatlich wiederkehrende Provisionen für jede Empfehlung
+                      Verdiene 5 % monatlich wiederkehrende Provisionen für jede Empfehlung!
                     </p>
                   </div>
                   <a

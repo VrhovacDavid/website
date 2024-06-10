@@ -5,11 +5,26 @@ import Footer from '../Footer';
 import { motion, useScroll, useSpring } from "framer-motion";
 
 const features = [
-  // deine features
+  {
+    name: "Plan aussuchen",
+    icon: "/icons/plan.svg",
+    description: "Zuerst wählst du einen von beiden Plänen aus."
+  },
+  {
+    name: "Bezahlen",
+    icon: "/icons/bezahlen.svg",
+    description: "Bezahle mit einer unserer sicheren Zahlungsmöglichkeiten."
+  },
+  {
+    name: "Starten!",
+    icon: "/icons/start.svg",
+    description: "Du erhältst eine E-Mail mit allen Details, sodass du mühelos starten kannst."
+  }
 ];
 
+
 const features1 = [
-  // deine features1
+
 ];
 
 const LazyVideo = ({ src, alt, ...props }) => {
@@ -74,7 +89,7 @@ const Process = () => {
                 <p className="mt-6 text-base sm:text-sup  text-gray-600">
                   Im ersten schritt, wählst du einen Plan, der zu dir passt, und schon bist du bereit, die Grenzen deiner Kreativität neu zu definieren. Dies ist der Moment, in dem alles beginnt – mit nur einem Klick.
                 </p>
-                <div className='my-8'>
+                <div className='my-8 mx-auto max-w-7xl px-6 lg:px-8'>
                 <a
                   href='/#pricing'
                   className="rounded-md bg-indigo-50  px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100" 

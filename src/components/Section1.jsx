@@ -16,7 +16,7 @@ const content = [
       },
       {
         text: "Zusammen nach vorne",
-        description: "Du musst nicht mehr ständig neue Agenturen Suchen die dir deine Arbeit erledigt und überteuert ist, hier hast du über 100 Service's die du direkt brauchen kannst!",
+        description: "Du musst nicht mehr ständig neue Agenturen suchen, die dir deine Arbeit erledigen und überteuert sind. Hier hast du über 80 Services, die du noch heute nutzen kannst!",
         icon: '/icons/neu_teamwork.svg',
       }
     ],
@@ -72,7 +72,7 @@ const Section1 = () => {
           <p className="text-small font-semibold  text-indigo-600">"Einmal TillTech, immer TillTech" – besser geht's nicht.</p>
           <h3 className="mt-2 text-h3 font-bold tracking-tight text-gray-900 ">Für dich Optimiert</h3>
           <p className="mt-6 text-base sm:text-sup  text-gray-600">
-            Wir revolutionieren das Design-Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. Unsere Designs kommen so schnell und sind so überzeugend, dass sie nicht nur deine Erwartungen erfüllen, sondern diese weit übertreffen.
+            Wir revolutionieren das Design-Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. <br /> Unsere Designs landen in der Regel innerhalb von <b>1-2 Tagen</b>  auf deinem Tisch!
           </p>
 
           <div className="mt-10 flex items-center gap-x-6">

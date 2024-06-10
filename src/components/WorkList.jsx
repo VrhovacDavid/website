@@ -358,7 +358,7 @@ const tabs = [
             <p className="text-small font-semibold  text-indigo-600">Unsere Dienstleistungen – Deine kreative Spielwiese</p>
             <h3 className="mt-2 text-h3 font-bold tracking-tight text-gray-900 leading-10">Entdecke die Vielfalt unserer Designleistungen</h3>
             <p className="mt-6 text-start text-base sm:text-sup text-gray-600">
-              Bei TillTech bieten wir dir ein breites Spektrum an Designservices, die darauf abgestimmt sind, jede deiner kreativen Anforderungen zu erfüllen. Von der ersten Skizze bis zum finalen Produkt, unsere maßgeschneiderten Lösungen decken alles ab. Egal, ob du frische Ideen für dein Branding brauchst, eine neue Website gestalten möchtest oder innovative App-Designs suchst – wir sind dein zuverlässiger Partner.
+              Bei TillTech bieten wir dir ein breites Spektrum an Designservices, die darauf abgestimmt sind, jede deiner kreativen Anforderungen zu erfüllen. Von der ersten Skizze bis zum finalen Produkt, unsere massgeschneiderten Lösungen decken alles ab. Wir sind dein zuverlässiger Partner.
             </p>
           </div>
   

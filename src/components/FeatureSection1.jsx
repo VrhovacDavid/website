@@ -3,7 +3,7 @@
 
 const features = [
   {
-    name: 'Unbegrenzte Möglichkeiten',
+    name: 'Unendlich viele Möglichkeiten',
     description: 'Schließe dich uns an und fordere so viele Designs an, wie dein Herz begehrt.',
     icon: 'icons/neu_unbegrenzt.svg',
     href: '/section1page'
@@ -32,11 +32,11 @@ export default function FeatureSection1() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl lg:max-w-7xl lg:mx-0">
           <h2 className="text-h2 font-bold tracking-tight text-gray-900 leading-10 ">
-          Verwandle deine Vision in Wirklichkeit – schneller als je zuvor.
+          Verwandle deine Design Vision in Wirklichkeit
           </h2>
           <p className="mt-6 mb-8 text-base sm:text-sup  text-gray-600">
-          Wir haben das Design nicht neu erfunden – wir haben es für dich optimiert. <br />Vergiss teure Agenturen und langwierige Prozesse. Mit TillTech erhältst du genau das Design, das du brauchst, genau dann, wenn du es brauchst.
-<br />Mit TillTech wird jedes Design zu einem Baustein deines Erfolgs. Starte jetzt und erlebe Design neu – schneller, einfacher und genau auf deine Bedürfnisse zugeschnitten."
+          Wir haben das Design nicht neu erfunden – wir haben es für dich optimiert. <br />Vergiss überteuerte Agenturen und lange Prozesse. Mit TillTech erhältst du genau das Design, das du brauchst, genau dann, wenn du es brauchst.
+
           </p>
           <a
               href="#pricing"
@@ -52,7 +52,7 @@ export default function FeatureSection1() {
               <div key={feature.name} className="flex flex-col">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="mb-6 flex  items-start justify-start rounded-lg ">
-                    <img className=' h-12 w-12' src={feature.icon} alt="asdf" />
+                    <img className=' h-10 w-10' src={feature.icon} alt="asdf" />
                   </div>
                  <p className='text-sup'>{feature.name}</p>
                 </dt>

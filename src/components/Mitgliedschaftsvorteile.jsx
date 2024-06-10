@@ -4,32 +4,32 @@
 const features = [
   {
     name: 'Unbegrenzte Designfreiheit',
-    description: 'Erweitere deine kreativen Horizonte. Füge deinem Design-Board so viele Anfragen hinzu, wie du möchtest, und sieh zu, wie deine Ideen lebendig werden.',
+    description: 'Füge deinem Design Board so viele Anfragen hinzu, wie du möchtest, und sieh zu, wie deine Ideen lebendig werden.',
     icon: '/icons/neu_unbegrenzt.svg',
   },
   {
     name: 'Transparente Kostenkontrolle',
-    description: 'Mit unserem festen monatlichen Preis bleibst du immer im Budget. Keine Überraschungen, keine versteckten Kosten – nur klare, einfache Abrechnung.',
+    description: 'Mit unserem festen monatlichen Preis bleibst du immer im Budget. Keine Überraschungen, keine versteckten Kosten.',
     icon: '/icons/transparent_kosten.svg',
   },
   {
     name: 'Erstklassige Designqualität',
-    description: 'Jedes Mal. Zugriff auf erstklassige Designs, wann immer du sie benötigst. Unsere Experten stehen bereit, um dir jederzeit die höchste Qualität zu liefern.',
+    description: 'Jedes Mal. Zugriff auf weltklasse Designs, wann immer du sie benötigst. Wir erfüllen immer deine Anforderungen.',
     icon: '/icons/quality.svg',
   },
   {
     name: 'Absolute Flexibilität',
-    description: 'Dein Business ändert sich, und deine Designbedürfnisse auch. Skaliere deinen Bedarf hoch oder runter, pausiere dein Abonnement oder kündige es jederzeit – ohne Komplikationen.',
+    description: 'Dein Business ändert sich, und deine Bedürfnisse auch. Pausiere dein Abonnement oder kündige es jederzeit.',
     icon: '/icons/flexibel.svg',
   },
   {
     name: 'Exklusiv für dich',
-    description: 'Jedes Design, das wir erstellen, wird speziell für dich angefertigt und ist zu 100% dein Eigentum. Genieße die Sicherheit, dass deine Kreationen einzigartig und ganz allein dein sind.',
-    icon: '/icons/exklusiv.svg',
+    description: 'Jedes Design, das wir erstellen, wird speziell für dich angefertigt und ist zu 100 % dein Eigentum.'
+    ,icon: '/icons/exklusiv.svg',
   },
   {
     name: 'Blitzschnelle Umsetzung',
-    description: 'Die Zeit drängt? Kein Problem. Unsere Prozesse garantieren, dass du deine Designs nicht nur in Top-Qualität, sondern auch in Rekordzeit erhältst. Im schnitt zwischen 24-48 Stunden',
+    description: 'Die Zeit drängt? Kein Problem. Wir garantieren, dass du deine Designs in Rekordzeit erhältst – im Schnitt zwischen 24 und 48 Stunden.',
     icon: '/icons/blitzschnell.svg',
   },
 ]
@@ -47,7 +47,7 @@ export default function Mitgliedschaftsvorteile() {
 
         <div className="mx-auto  max-w-7xl px-6 lg:px-8 skew-y-3">
           <div className="mx-auto max-w-4xl lg:max-w-2xl lg:mx-0">
-            <p className="text-small font-semibold leading-7 text-indigo-500">Deine Vorteile</p>
+            <p className="text-small font-semibold leading-7 text-indigo-500">Sieh dir an, wie du profitieren kannst</p>
             <h3 className="mt-2 text-h3 leading-10 font-bold tracking-tight text-black ">Vorteile einer Mitgliedschaft bei TillTech</h3>
             <p className="mt-6 text-base sm:text-sup text-black">
               So überzeugend, dass du nie wieder woanders hingehen wirst – garantiert.          </p>

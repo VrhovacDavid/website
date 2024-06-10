@@ -43,15 +43,15 @@ export default function Example() {
                 </span>
               </div>
               <span className="text-small font-semibold text-indigo-600 ">
-                Wenig Plätze verfügbar
+                3 Plätze verfügbar
               </span>
             </div>
           </div>
           <h1 className="mt-2 text-h1 leading-10 sm:text-6xl font-bold tracking-tight text-gray-900 pt-2">
-            Die neue Generation des Design's
+          Die neue Generation des Grafik Design
           </h1>
-          <p className="mt-6 text-base sm:text-sup text-gray-600">
-            Wir bieten dir eine riesige Auswahl an Grafik Design, Programmierungen, Webdesign Service und mehr an, für eine monatliche Gebühr die du jederzeit pausieren oder kündigen kannst.
+          <p className="mt-6 text-base sm:text-sup text-gray-600">Wir bieten dir über 80 Dienstleistungen im Bereich Grafikdesign, Webdesign, Programmierungen und mehr, für eine monatliche Gebühr, die du jederzeit pausieren oder kündigen kannst. So musst du nie wieder zu einer anderen Agentur wechseln – alles ist an einem Platz!
+
           </p>
           <div className="mt-8 flex items-center gap-x-6">
             <a

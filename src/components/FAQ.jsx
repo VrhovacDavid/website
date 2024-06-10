@@ -3,7 +3,7 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 const faqs = [
   {
     question: "Warum sollte ich nicht einfach einen festangestellten Designer einstellen?",
-    answer: "Gute Frage! Zum Beispiel übersteigen die jährlichen Kosten für einen festangestellten Senior Designer mittlerweile 100.000.-, zuzüglich Nebenleistungen (und viel Glück bei der Suche nach einem verfügbaren). Darüber hinaus hast du vielleicht nicht immer genug Arbeit, um sie ständig zu beschäftigen, sodass du für nicht genutzte Zeit zahlst. Mit dem Monatsplan kannst du dein Abonnement nach Bedarf pausieren und fortsetzen, um sicherzustellen, dass du deinen Designer nur bezahlst, wenn auch Arbeit für ihn vorliegt."
+    answer: "Gute Frage! Zum Beispiel übersteigen die jährlichen Kosten für einen festangestellten Senior Designer mittlerweile 100'000.-, zuzüglich Nebenleistungen (und viel Glück bei der Suche nach einem verfügbaren). Darüber hinaus hast du vielleicht nicht immer genug Arbeit, um sie ständig zu beschäftigen, sodass du für nicht genutzte Zeit zahlst. Mit dem Monatsplan kannst du dein Abonnement nach Bedarf pausieren und fortsetzen, um sicherzustellen, dass du deinen Designer nur bezahlst, wenn auch Arbeit für ihn vorliegt."
   },
   {
     question: "Gibt es eine Grenze, wie viele Anfragen ich stellen kann?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "Gibt es Designarbeiten, die ihr nicht anbietet?",
-    answer: "Absolut. TillTech deckt folgende Designarbeiten nicht ab: Animierte Grafiken (GIFs usw.), Dokumentendesign (medizinische Formulare usw.), komplexe Verpackungen und umfangreiche Printdesigns (Magazine, Bücher usw.)."
+    answer: "Absolut. TillTech deckt folgende Designarbeiten nicht ab: Animierte Grafiken (GIFs usw.), Zeichnungen, komplexe Verpackungen und umfangreiche Printdesigns (Magazine, Bücher usw.)."
   },
   {
     question: "Was ist, wenn ich nur eine einzige Anfrage habe?",

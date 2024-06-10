@@ -6,7 +6,7 @@ const testimonials = [
     author: {
       name: 'Jessica Zeder',
       handle: 'dipon',
-      imageUrl: 'https://lh3.googleusercontent.com/a-/ALV-UjVroJtArLw1PnQ0LegEiKCFnKi03D6xBl1vlW0N-8xTJanBjkO9=w60-h60-p-rp-mo-br100',
+      imageUrl: '/Jessica.webp',
     },
   }  ,{
     body: 'Habe eine sehr gute Zusammenarbeit mit der Firma Till Tech. Ihr macht das super gut, weiter so.... M. Kathriner aus Luzern',
@@ -20,7 +20,7 @@ const testimonials = [
     author: {
       name: 'Stephan Hauser',
       handle: 'stephanH',
-      imageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocJbGfENdQqtTcPLf7kK3bnr8YaW4k-_QZHU4U0e8vnZCRwCpg=w60-h60-p-rp-mo-br100',
+      imageUrl: '/Stephan.webp',
     },
   }
 ];
@@ -33,7 +33,7 @@ export default function Testimonials() {
         <div className="max-w-4xl text-start">
           <p className="text-small font-semibold  tracking-tight text-indigo-600">Zufriedene Kunden</p>
           <h3 className="mt-2 text-h3 font-bold leading-10 tracking-tight text-gray-900 sm:text-4xl pb-4">
-            Design Kundenfeedback
+            Unser Kundenfeedback
           </h3>
           <p className="mx-auto max-w-7xl text-base sm:text-sup text-gray-600">
           Wir hatten das Möglichkeit, mit vielen inspirierenden Menschen zusammenzuarbeiten.
