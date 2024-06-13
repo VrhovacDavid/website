@@ -78,7 +78,7 @@ export default function Example() {
 
 
 
-              playsInline= 'true'
+              playsInline
               width={2432}
               height={1442}
               controls
