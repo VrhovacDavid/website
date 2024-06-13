@@ -48,7 +48,7 @@ export default function Example() {
             </div>
           </div>
           <h1 className="mt-2 text-h1 leading-10 sm:text-6xl font-bold tracking-tight text-gray-900 pt-2">
-          Die neue Generation des Grafik Design
+            Die neue Generation des Grafik Design
           </h1>
           <p className="mt-6 text-base sm:text-sup text-gray-600">Wir bieten dir über 80 Dienstleistungen im Bereich Grafikdesign, Webdesign, Programmierungen und mehr, für eine monatliche Gebühr, die du jederzeit pausieren oder kündigen kannst. So musst du nie wieder zu einer anderen Agentur wechseln – alles ist an einem Platz!
 
@@ -66,14 +66,19 @@ export default function Example() {
           </div>
         </div>
         <div className="mx-auto mt-16 flex lg:max-w-4xl lg:flex-none xl:ml-32">
-          <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+          <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4" >
+           
+           
+           
+           
+        
             <video
               ref={videoRef}
-              src={isVisible ? "/HeroVideoLong.webm" : undefined} 
-   
-            
-              
-playsInline
+              src={isVisible ? "/HeroVideoLong.webm" : undefined}
+
+
+
+              playsInline= 'true'
               width={2432}
               height={1442}
               controls
