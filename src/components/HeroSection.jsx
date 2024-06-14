@@ -68,25 +68,18 @@ export default function Example() {
         <div className="mx-auto mt-16 flex lg:max-w-4xl lg:flex-none xl:ml-32">
           <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4" >
            
-           
-           
+
+
+
+
+          <video controls autoPlay loop muted playsInline width={2432} height={1442}   className="w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10">
+  <source src="/HeroVideoLong.webm" type="video/webm" />
+  <source src="/HeroVideoLong.mp4" type="video/mp4" />
+
+</video>
            
         
-            <video
-              ref={videoRef}
-              src={isVisible ? "/HeroVideoLong.webm" : undefined}
-
-
-
-              playsInline
-              width={2432}
-              height={1442}
-              controls
-              autoPlay
-              loop
-              muted
-              className="w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10"
-            />
+           
           </div>
         </div>
       </div>
