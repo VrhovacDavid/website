@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useRef, useEffect} from "react"
 
-export default function Example() {
+export default function Example(props) {
 
 
+
+
+      const videoRef = useRef(undefined);
+      useEffect(() => {
+          videoRef.current.defaultMuted = true;
+      })
 
 
 
@@ -48,7 +54,7 @@ export default function Example() {
 
 
 
-            <video controls autoPlay loop muted  width={2432} height={1442} className="w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10">
+            <video controls autoPlay loop  width={2432} height={1442} ref={videoRef} className="w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10">
               <source src="/HeroVideoLong.webm" type="video/webm" />
               <source src="/HeroVideoLong.mp4" type="video/mp4" />
 
