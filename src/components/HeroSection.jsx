@@ -52,7 +52,7 @@ export default function Example() {
         
             <video
               
-              src={isVisible ? "/HeroVideoLong.webm" : undefined}
+              src= "/HeroVideoLong.webm" 
 
 
 
