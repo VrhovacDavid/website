@@ -53,7 +53,9 @@ export default function Example() {
               width={2432}
               height={1442}
               controls
-              autoPlay="autoplay" playsInLine="playsinline" loop="true" muted="true"
+              autoPlay
+              playsInLine
+              loop
 
 
 
