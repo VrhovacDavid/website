@@ -12,6 +12,7 @@ import Kontakt from "./components/Pages/Kontakt"
 import NoPage from "./components/Pages/404"
 import Nike from "./components/Portfolio/Nike"
 import CookieConsent from "./components/Legal/CookieConsent"
+import Keypad from "./components/Portfolio/Keypad"
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
     <Route path='/services' element={<Services/>}/>
     <Route path='/kontakt' element={<Kontakt/>}/>
     <Route path='/nike' element={<Nike/>}/>
+    <Route path='/keypad' element={<Keypad/>}/>
     <Route path='*' element={<NoPage/>}/>
    
 
