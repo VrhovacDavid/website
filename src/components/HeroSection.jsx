@@ -54,7 +54,7 @@ export default function Example() {
               height={1442}
               controls
               autoPlay
-              playsInLine
+              
               loop
 
 
