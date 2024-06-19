@@ -46,11 +46,11 @@ export default function Example() {
         <video
           loop
           muted
-          autoplay
+          autoplay="true"
           playsinline
           src="/HeroVideoLong.webm" 
-          class="w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10"
-          className=""
+          className="w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10"
+          
         />,
       ` }}></div>
 
