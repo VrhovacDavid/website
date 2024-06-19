@@ -56,7 +56,7 @@ export default function PricingStripe() {
             
             <div className="relative my-4 ">
                 <p className="mx-auto max-w-7xl text-base sm:text-sup  text-gray/60 mb-6">
-                    Jedes Projekt ist einzigartig! Desswegen bieten wir maßgeschneiderte Abonnements, die dir die Freiheit geben, deine Designs nach Bedarf zu skalieren. Wähle den Plan, der am besten zu deinen aktuellen Anforderungen passt.
+                    Jedes Projekt ist einzigartig! Desswegen bieten wir maßgeschneiderte Abonnements, die dir die Freiheit geben, deine Grafik Designs nach Bedarf zu skalieren. Wähle den Plan, der am besten zu deinen aktuellen Anforderungen passt.
                 </p>
 
                 <div className='pb-4'>

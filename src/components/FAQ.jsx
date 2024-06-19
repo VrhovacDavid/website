@@ -10,7 +10,7 @@ const faqs = [
     answer: "Sobald du abonniert bist, kannst du so viele Designanfragen in deine Warteschlange aufnehmen, wie du möchtest, und sie werden nacheinander abgearbeitet."
   },
   {
-    question: "Wie schnell erhalte ich meine Designs?",
+    question: "Wie schnell erhalte ich meine Grafik Designs?",
     answer: "Im Durchschnitt werden die meisten Anfragen in nur zwei Tagen oder weniger bearbeitet. Komplexere Anfragen können jedoch länger dauern (Grössere Webseiten, Mobile Apps, etc.)."
   },
   {

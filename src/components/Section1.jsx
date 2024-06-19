@@ -72,7 +72,7 @@ const Section1 = () => {
           <p className="text-small font-semibold  text-indigo-600">"Einmal TillTech, immer TillTech" – besser geht's nicht.</p>
           <h3 className="mt-2 text-h3 font-bold tracking-tight text-gray-900 ">Für dich Optimiert</h3>
           <p className="mt-6 text-base sm:text-sup  text-gray-600">
-            Wir revolutionieren das Design-Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. <br /> Unsere Designs landen in der Regel innerhalb von <b>1-2 Tagen</b>  auf deinem Tisch!
+            Wir revolutionieren das Grafik Design Erlebnis, indem wir unzuverlässige Freelancer und kostspielige Agenturen durch eine transparente, monatliche Pauschalgebühr ersetzen. <br /> Unsere Designs landen in der Regel innerhalb von <b>1-2 Tagen</b>  auf deinem Tisch!
           </p>
 
           <div className="mt-10 flex items-center gap-x-6">
