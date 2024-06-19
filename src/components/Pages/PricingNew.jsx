@@ -1,4 +1,5 @@
 import { CheckIcon } from '@heroicons/react/20/solid'
+import React, { useEffect } from 'react';
 
 const tiers = [
   {
@@ -23,8 +24,27 @@ const tiers = [
   },
 ]
 
+
+
 export default function PricingNew() {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://js.stripe.com/v3/pricing-table.js';
+    script.async = true;
+    document.body.appendChild(script);
+  
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+
   return (
+
+
+
+ 
 
     <div className="isolate overflow-hidden bg-darkBlue " id='pricing'>
       <div className=''>
@@ -129,6 +149,9 @@ export default function PricingNew() {
                       Verdiene 5 % monatlich wiederkehrende Provisionen für jede Empfehlung!
                     </p>
                   </div>
+                  
+               
+            
                   <a
                     href="#"
                     className="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2 text-center text-small font-semibold  text-white shadow-sm"
@@ -136,7 +159,15 @@ export default function PricingNew() {
                     Freund empfehlen <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
+               
               </div>
+              <div className='r'>
+              <stripe-pricing-table
+                  pricing-table-id="prctbl_1PTKJdHv9PKFXa7kgtm7lD7s"
+                  publishable-key="pk_live_51NAssRHv9PKFXa7kJnGHocdnbE5RZ3ZuUKNpixKaiI8nKTchw1eMufNWgUojJGmlTFesb9c7DTSW4yy7YYiYrXT6004kJyAWwd"
+                ></stripe-pricing-table>
+              </div>
+              
             </div>
           </div>
         </div>

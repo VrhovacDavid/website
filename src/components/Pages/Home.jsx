@@ -15,6 +15,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import { Gradient } from "whatamesh";
 import PricingNew from './PricingNew';
 import { useLocation } from 'react-router-dom';
+import PricingStripe from './PricingStripe';
 
 
 const Home = () => {
@@ -58,7 +59,8 @@ const Home = () => {
         <WorkList />
         <PortfolioFrontPage />
         <Testimonials />
-        <PricingNew />
+        
+        <PricingStripe/>
         <FAQ />
         <Download />
         <Footer />
