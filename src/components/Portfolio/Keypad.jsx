@@ -1,4 +1,4 @@
-import { ImgComparisonSlider } from '@img-comparison-slider/react';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Header from '../Header'
 import Footer from '../Footer'
 import React from 'react'
@@ -251,10 +251,11 @@ export default function Keypad() {
                                 </div>
                             </div>
                             <div className="flex items-center justify-center lg:items-start lg:justify-end ">
-                                <ImgComparisonSlider className='rounded-xl'>
-                                    <img slot="first" src="/KeyPadWhite.webp" />
-                                    <img slot="second" src="/Notepad.webp" />
-                                </ImgComparisonSlider>
+                            <ReactCompareSlider className='rounded-xl'
+      itemOne={<ReactCompareSliderImage src="/KeyPadWhite.webp"  alt="Image one" />}
+      itemTwo={<ReactCompareSliderImage src="/Notepad.webp"  alt="Image two" />}
+    />
+                               
                             </div>
 
                         </div>
