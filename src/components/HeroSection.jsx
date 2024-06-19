@@ -1,8 +1,47 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 export default function Example() {
 
 
+  const LazyVideo = ({ src, alt, ...props }) => {
+    const [isVisible, setIsVisible] = useState(false);
+    const videoRef = useRef(null);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+              observer.disconnect();
+            }
+          });
+        },
+        {
+          threshold: 0.25,
+        }
+      );
+  
+      if (videoRef.current) {
+        observer.observe(videoRef.current);
+      }
+  
+      return () => {
+        if (videoRef.current) {
+          observer.unobserve(videoRef.current);
+        }
+      };
+    }, []);
+  
+    return (
+      <video
+        ref={videoRef}
+        src={isVisible ? src : undefined}
+        alt={alt}
+        {...props}
+      />
+    );
+  };
 
 
   return (
@@ -112,6 +151,33 @@ export default function Example() {
            
           </div>
         </div>
+
+        <LazyVideo
+              src="/Step1.mp4"
+              alt="Schritt 1"
+              className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
+              autoPlay
+              loop
+              muted
+            />
+
+<LazyVideo
+              src="/HeroVideoLong.mp4"
+              alt="Schritt 1"
+              className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
+              autoPlay
+              loop
+              muted
+            />
+
+<LazyVideo
+              src="/HeroVideoLong.webm"
+              alt="Schritt 1"
+              className="w-full md:w-[48rem] md:max-w-4xl rounded-xl shadow-xl ring-1 ring-gray-400/10 mx-auto"
+              autoPlay
+              loop
+              muted
+            />
     </div>
   );
 }
