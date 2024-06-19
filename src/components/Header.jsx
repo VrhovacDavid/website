@@ -132,6 +132,10 @@ export default function Header() {
           <a href="/#downloads" className="text-small font-semibold leading-6 text-gray-900">
             Free Download 🔥
           </a>
+          <a href="https://climate.stripe.com/nAoVjH" className="text-small font-semibold leading-6 text-gray-900">
+Klimawandel
+          </a>
+         
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
