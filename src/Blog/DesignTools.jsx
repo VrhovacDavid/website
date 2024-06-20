@@ -241,7 +241,7 @@ const tools = [
   "f3": "Schnelles Tempo",
   "f4": "Node-Management ist nicht ideal",
   "cta": "Kostenlos Nutzen",
-  "link": "https://svg-edit.github.io",
+  "link": "https://svgedit.netlify.app/editor/index.html",
   "urteil": "SVG-Edit ist ein einfaches Grafikprogramm, das genau das tut, was der Name sagt: Sie können damit SVG-Dateien erstellen und bearbeiten. Das Grafikprogramm ist kostenlos in den meisten Browsern nutzbar und umfasst die Standardfunktionen. Sie können es als Online-Zeichenprogramm nutzen und mit dem Stift kreativ werden, Formen erstellen, Linien in Pfade umwandeln sowie Farben und Bilder hinzufügen. Das fertige Projekt können Sie in gängige Formate wie WMP, JPG, BMP, GIF, TIFF und natürlich SVG exportieren. Die Benutzeroberfläche ist recht einfach zu bedienen und erinnert an ein Programm zum Zeichnen aus den frühen 2000ern."
 },
 
