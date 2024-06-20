@@ -10,6 +10,7 @@ const navigation = {
       { name: 'Preise', href: '/#pricing' },
       { name: 'Portfolio', href: '/portfolio' },
       { name: 'Dienstleistungen', href: '/#dienstleistungen' },
+      { name: 'Blog', href: '/blog' },
       
 
     ],
@@ -19,6 +20,7 @@ const navigation = {
       { name: 'Bio Links', href: '/links' },
       { name: 'Kamera ausstattung', href: '/cameragear' },
       { name: 'Shop (Coming Soon)', href: '#' },
+      { name: 'TillTech & Klimawandel', href: 'https://climate.stripe.com/nAoVjH' },
     ],
     company: [
       { name: 'Kundenportal', href: 'https://billing.stripe.com/p/login/28oaHy9m414Bfgk288' },

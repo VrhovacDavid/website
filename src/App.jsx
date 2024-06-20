@@ -13,7 +13,9 @@ import NoPage from "./components/Pages/404"
 import Nike from "./components/Portfolio/Nike"
 import CookieConsent from "./components/Legal/CookieConsent"
 import Keypad from "./components/Portfolio/Keypad"
+import DesignTools from "./Blog/DesignTools"
 
+import Blog from "./Blog/Blog"
 
 
 
@@ -38,6 +40,17 @@ const App = () => {
     <Route path='/nike' element={<Nike/>}/>
     <Route path='/keypad' element={<Keypad/>}/>
     <Route path='*' element={<NoPage/>}/>
+
+
+
+
+    <Route path='/blog' element={<Blog/>}/>
+
+    <Route path='/beste-kostenlose-grafikprogramme' element={<DesignTools/>}/>
+
+
+
+
    
 
 

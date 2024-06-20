@@ -132,8 +132,8 @@ export default function Header() {
           <a href="/#downloads" className="text-small font-semibold leading-6 text-gray-900">
             Free Download 🔥
           </a>
-          <a href="https://climate.stripe.com/nAoVjH" className="text-small font-semibold leading-6 text-gray-900">
-Klimawandel
+          <a href="/blog" className="text-small font-semibold leading-6 text-gray-900">
+Blog
           </a>
          
         </Popover.Group>
@@ -223,6 +223,15 @@ Klimawandel
                 >
                   Free Download 🔥
                 </a>
+
+                <a
+                  href="/blog"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={handleLinkClick}
+                >
+                  Blog
+                </a>
+
               </div>
               <div className="py-6">
               <a
