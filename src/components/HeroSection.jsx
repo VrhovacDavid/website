@@ -1,47 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from "react";
 
 export default function Example() {
 
 
-  const LazyVideo = ({ src, alt, ...props }) => {
-    const [isVisible, setIsVisible] = useState(false);
-    const videoRef = useRef(null);
-  
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setIsVisible(true);
-              observer.disconnect();
-            }
-          });
-        },
-        {
-          threshold: 0.25,
-        }
-      );
-  
-      if (videoRef.current) {
-        observer.observe(videoRef.current);
-      }
-  
-      return () => {
-        if (videoRef.current) {
-          observer.unobserve(videoRef.current);
-        }
-      };
-    }, []);
-  
-    return (
-      <video
-        ref={videoRef}
-        src={isVisible ? src : undefined}
-        alt={alt}
-        {...props}
-      />
-    );
-  };
 
 
   return (
@@ -88,11 +49,12 @@ export default function Example() {
           <video className="w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10" 
           src="/HeroVideoLong.webm" 
           autoPlay="autoplay" 
-          playsInLine="playsinline" 
+          playsInline="playsInline" 
           width={2432}
           height={1442}
-          loop="true" 
-          muted="true"
+          loop={true}
+          muted={true}
+          
           controls/>
            
           </div>
@@ -108,14 +70,3 @@ export default function Example() {
     </div>
   );
 }
-/*   <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"  dangerouslySetInnerHTML={{ __html: `
-        <video
-          loop
-          muted
-          autoPlay
-          playsinline
-          src="/HeroVideoLong.webm" 
-          className = "w-[86rem] lg:h-[32rem] lg:object-cover rounded-md shadow-2xl ring-1 ring-gray-900/10"
-       
-        />,
-      ` }}></div>*/

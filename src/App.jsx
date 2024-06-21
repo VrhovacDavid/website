@@ -13,10 +13,12 @@ import NoPage from "./components/Pages/404"
 import Nike from "./components/Portfolio/Nike"
 import CookieConsent from "./components/Legal/CookieConsent"
 import Keypad from "./components/Portfolio/Keypad"
-import DesignTools from "./Blog/DesignTools"
+
+
 
 import Blog from "./Blog/Blog"
-
+import DesignTools from "./Blog/DesignTools"
+import LogoErstellenLassen from "./Blog/LogoErstellenLassen"
 
 
 const App = () => {
@@ -47,6 +49,7 @@ const App = () => {
     <Route path='/blog' element={<Blog/>}/>
 
     <Route path='/beste-kostenlose-grafikprogramme' element={<DesignTools/>}/>
+    <Route path='/logo-erstellen-lassen' element={<LogoErstellenLassen/>}/>
 
 
 

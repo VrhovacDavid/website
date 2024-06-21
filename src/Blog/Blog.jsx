@@ -2,6 +2,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 
+
 const posts = [
     {
       id: 1,
@@ -13,6 +14,22 @@ const posts = [
         'https://backend.dv-it.ch/wp-content/uploads/2024/06/Thumbnail-Blog.webp',
       date: '20.06.2024',
       datetime: '2024-06-20',
+      author: {
+        name: 'TillTech',
+        imageUrl:
+          'https://backend.dv-it.ch/wp-content/uploads/2024/06/TillTechLogoRound.webp',
+      },
+    },
+    {
+      id: 2,
+      title: 'Logo erstellen lassen ',
+      href: '/logo-erstellen-lassen',
+      description:
+        'Das ideale Firmenlogo? Das ist das Logo, das perfekt zu dir passt.',
+      imageUrl:
+        'https://backend.dv-it.ch/wp-content/uploads/2024/06/Hand-Holding-Notebook-Logo.jpg',
+      date: '21.06.2024',
+      datetime: '2024-06-21',
       author: {
         name: 'TillTech',
         imageUrl:
