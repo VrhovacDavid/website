@@ -28,16 +28,7 @@ const tiers = [
 
 export default function PricingNew() {
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://js.stripe.com/v3/pricing-table.js';
-    script.async = true;
-    document.body.appendChild(script);
-  
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+
 
 
   return (
@@ -161,12 +152,7 @@ export default function PricingNew() {
                 </div>
                
               </div>
-              <div className='r'>
-              <stripe-pricing-table
-                  pricing-table-id="prctbl_1PTKJdHv9PKFXa7kgtm7lD7s"
-                  publishable-key="pk_live_51NAssRHv9PKFXa7kJnGHocdnbE5RZ3ZuUKNpixKaiI8nKTchw1eMufNWgUojJGmlTFesb9c7DTSW4yy7YYiYrXT6004kJyAWwd"
-                ></stripe-pricing-table>
-              </div>
+             
               
             </div>
           </div>

@@ -60,7 +60,7 @@ const Home = () => {
         <PortfolioFrontPage />
         <Testimonials />
         
-        <PricingStripe/>
+        <PricingNew/>
         <FAQ />
         <Download />
         <Footer />
