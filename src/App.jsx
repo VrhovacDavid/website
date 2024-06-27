@@ -3,7 +3,7 @@ import Home from "./components/Pages/Home"
 import Datenschutz from "/src/components/Legal/Datenschutz"
 import Impressum from "/src/components/Legal/Impressum"
 import AGB from "./components/Legal/AGB"
-import  Portfolio  from "./components/Pages/Portfolio"
+import Portfolio from "./components/Pages/Portfolio"
 import Links from "./components/Pages/Links"
 import Process from "./components/Pages/Process"
 import CameraGear from "./components/Pages/CameraGear"
@@ -19,6 +19,7 @@ import Keypad from "./components/Portfolio/Keypad"
 import Blog from "./Blog/Blog"
 import DesignTools from "./Blog/DesignTools"
 import LogoErstellenLassen from "./Blog/LogoErstellenLassen"
+
 
 
 const App = () => {

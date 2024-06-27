@@ -1,48 +1,80 @@
-import React, { useState } from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
+import Header from "../Header"
+import Footer from "../Footer"
 
-const data = [
-  {
 
-    img: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/496ac3183303651.653d36f34650c.png',
-  },
+const products = [
   {
- 
-    img: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/2c2410184441009.6552402114409.png',
+    id: 1,
+    name: 'Audient Evo 4',
+    color: 'Audient',
+    href: '#',
+    imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/AudientEvo43D.webp',
+    imageAlt: 'Audient Evo 4 3D Modell',
 
   },
   {
-  
-    img: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/a65865198492353.664257d7b0571.jpg',
-  },
-  {
- 
-    img: '/Portfolio/SFM.png',
-  },
-  {
- 
-    img: '/Portfolio/Nike.png',
-  },
-  {
+    id: 2,
+    name: 'Sound Board',
+    color: 'Yamaha',
+    href: '#',
+    imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/Yamah3D.webp',
+    imageAlt: 'Yamaha 3D Modell',
 
-    img: '/Notepad.webp', 
-  href: '/keypad'
   },
   {
- 
-    img: 'https://cdn.dribbble.com/userupload/13682731/file/original-1fc1a9a9fe85e3b3d62ac0c7d5934273.png?resize=1024x1024',
+    id: 3,
+    name: 'Apple Watch Pro 3',
+    color: 'Apple',
+    href: '#',
+    imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/AppleWatch3D.webp',
+    imageAlt: 'Apple Watch 3D Modell',
+
   },
   {
- 
-    img: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/22fb07197329069.662ed830edcec.jpg',
+    id: 4,
+    name: 'Valentino Parfume',
+    color: 'Valentino',
+    href: '#',
+    imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/Valentino3D.webp',
+    imageAlt: 'Valentino Parfume 3D Modell',
+
   },
   {
-   
-    img: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/244550197361593.662f83461160d.png',
-  }
+    id: 5,
+    name: 'Keypad',
+    color: 'Omnipad',
+    href: '#',
+    imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/Keypad3D.webp',
+    imageAlt: 'Yamaha 3D Modell',
+
+  },
+
+  // More products...
 ]
 
+const graphicdesign = [
+  {
+    id: 1,
+    name: 'Nike Dream Big',
+    color: 'Nike',
+    href: '#',
+    imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/Nike.png',
+    imageAlt: 'Nike Think Big Grafik Design',
+
+  },
+  {
+    id: 2,
+    name: 'Brutalism Poster',
+    color: 'Festival',
+    href: '#',
+    imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/Brutalism.png',
+    imageAlt: 'Festival Poster',
+
+  }
+
+
+
+]
 
 
 const navigation = {
@@ -85,7 +117,7 @@ const navigation = {
         </svg>
       ),
     },
-   
+
     {
       name: 'X',
       href: 'https://twitter.com/till_tech',
@@ -95,39 +127,36 @@ const navigation = {
         </svg>
       ),
     },
-   
-   
+
+
 
   ],
 }
 
 export default function Portfolio() {
-
-
-  const boxStyle = ' relative overflow-hidden rounded-xl border-2 bg-neutral-100 p-2 flex flex-col items-center justify-center';
-
-
-
-
   return (
-    <div className='pattern-bg'>
-      <div className="overflow-hidden bg-transparent ">
-        <Header />
 
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="relative isolate px-6 pt-14 lg:px-8">
 
-            <div className="mx-auto max-w-7xl pb-16 ">
+    <div className="pattern-bg"> <Header />
 
-              <div className="text-start">
-                <h1 className=" text-h1 leading-10 font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Graphic Design Portfolio
-                </h1>
-                <p className="mt-6 sm:text-sup text-base  text-gray-600">
-                  Das sind unsere neusten Arbeiten. Noch mehr arbeiten findest du auf meinen Sozialen Medien! 👇          </p>
-                
-              </div>
-              <div className=" mt-8 mb-8 flex justify-start space-x-6">
+
+
+
+      <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-0">
+
+          <div className="mx-auto max-w-7xl pb-16 ">
+
+            <div className="text-start">
+              <h1 className=" text-h2 leading-10 font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Graphic Design Portfolio
+              </h1>
+              <p className="mt-6 sm:text-sup text-base  text-gray-600">
+                Das sind unsere neusten Arbeiten. Noch mehr arbeiten findest du auf meinen Sozialen Medien! 👇          </p>
+
+            </div>
+            <div className=" mt-8 mb-8 flex justify-start space-x-6">
               {navigation.social.map((item) => (
                 <a key={item.name} href={item.href} className="text-black hover:text-gray-300">
                   <span className="sr-only">{item.name}</span>
@@ -135,32 +164,128 @@ export default function Portfolio() {
                 </a>
               ))}
             </div>
-            </div>
-
-
           </div>
-
-          <div className='grid md:grid-cols-4  auto-rows-[300px] gap-4 '>
-            {data.map((item, i) => (
-             
-              <div key={i} className={`${boxStyle} 
-                
-                ${i === 0 || i === 4 || i === 7 || i === 8 ? 'md:col-span-2' : ''}
-                ${i === 4 || i === 2 ? 'md:row-span-2' : ''}`}>
- <a href={item.href}>
-                <img src={item.img} alt="Portfolio" className="absolute inset-0 w-full h-full object-cover" />
-                </a>
-
-
-              </div>
-             
-            ))}
-          </div>
-
         </div>
-      </div>
 
+
+
+        <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900">3D Modelle </h2>
+          <a href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 ">
+            Alles ansehen
+            <span aria-hidden="true"> &rarr;</span>
+          </a>
+        </div>
+
+
+
+        <div className="relative mt-8">
+          <div className="relative -mb-6 w-full overflow-x-auto pb-6">
+            <ul
+              role="list"
+              className="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+            >
+              {products.map((product) => (
+                <li key={product.id} className="inline-flex w-64  flex-col text-center lg:w-auto">
+                  <div className="group relative">
+                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-xl bg-gray-200 shadow-xl">
+                      <img
+                        src={product.imageSrc}
+                        alt={product.imageAlt}
+                        className="h-full w-full object-cover object-center group-hover:opacity-75"
+                      />
+                    </div>
+                    <div className="mt-6">
+                      <p className="text-sm text-gray-500">{product.color}</p>
+                      <h3 className="mt-1 font-semibold text-gray-900">
+                        <a href={product.href}>
+                          <span className="absolute inset-0" />
+                          {product.name}
+                        </a>
+                      </h3>
+
+                    </div>
+                  </div>
+
+
+
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0 mt-16">
+          <h3 className="text-2xl font-bold tracking-tight text-gray-900">Grafik Design </h3>
+          <a href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 ">
+            Alles ansehen
+            <span aria-hidden="true"> &rarr;</span>
+          </a>
+        </div>
+
+        <div className="relative mt-8">
+          <div className="relative -mb-6 w-full overflow-x-auto pb-6">
+            <ul
+              role="list"
+              className="mx-4 inline-flex space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:space-x-0"
+            >
+              {graphicdesign.map((graphicdesign) => (
+                <li key={graphicdesign.id} className="inline-flex w-64  flex-col text-center lg:w-auto">
+                  <div className="group relative">
+                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-xl bg-gray-200 shadow-xl">
+                      <img
+                        src={graphicdesign.imageSrc}
+                        alt={graphicdesign.imageAlt}
+                        className="h-full w-full object-cover object-center group-hover:opacity-75"
+                      />
+                    </div>
+                    <div className="mt-6">
+                      <p className="text-sm text-gray-500">{graphicdesign.color}</p>
+                      <h3 className="mt-1 font-semibold text-gray-900">
+                        <a href={graphicdesign.href}>
+                          <span className="absolute inset-0" />
+                          {graphicdesign.name}
+                        </a>
+                      </h3>
+
+                    </div>
+                  </div>
+
+
+
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
       <Footer />
     </div>
-  );
+  )
 }

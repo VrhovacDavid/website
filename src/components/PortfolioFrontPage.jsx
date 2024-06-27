@@ -2,49 +2,47 @@
 const products = [
     {
       id: 1,
-      name: 'Instagram Story',
-      color: 'Blend',
-      price: '$35',
+      name: 'Audient Evo 4',
+      color: 'Audient',
+   
       href: '#',
-      imageSrc: '/Blend.svg',
+      imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/AudientEvo43D.webp',
       imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
    
     },
     {
         id: 2,
-        name: 'Product 3D Modell',
-        color: 'Valentino',
-        price: '$35',
-        href: '#',
-        imageSrc: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/244550197361593.662f83461160d.png',
+        name: 'Sound Board',
+        color: 'Yamaha',
+        imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/Yamah3D.webp',
         imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
      
       },
       {
         id: 3,
-        name: 'Think Big',
-        color: 'Nike',
+        name: 'Apple Watch Pro 3',
+        color: 'Apple',
         price: '$35',
         href: '#',
-        imageSrc:   '/Portfolio/Nike.png',
+        imageSrc:   'https://backend.dv-it.ch/wp-content/uploads/2024/06/AppleWatch3D.webp',
         imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
      
       },    {
         id: 4,
-        name: 'Keyboard',
-        color: 'Yamaha',
+        name: 'Parfüm 3D Modell',
+        color: 'Valentino',
         price: '$35',
         href: '#',
-        imageSrc: '/3DImage.avif',
+        imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/Valentino3D.webp',
         imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
      
       },    {
         id: 5,
-        name: 'Brutalism',
-        color: 'Personal',
+        name: 'Think Big',
+        color: 'Nike',
         price: '$35',
         href: '#',
-        imageSrc: '/Brutalism.webp',
+        imageSrc: 'https://backend.dv-it.ch/wp-content/uploads/2024/06/Nike.png',
         imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
      
       },

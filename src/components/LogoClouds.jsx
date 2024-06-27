@@ -18,7 +18,7 @@ export default function LogoClouds() {
               <img
                 loading="lazy"
                 className="max-h-12 w-full object-contain"
-                src="/logos/NextFertility.webp"
+                src="https://backend.dv-it.ch/wp-content/uploads/2024/06/AudientLogo.png"
                 alt="Reform"
                 width={158}
                 height={48}
@@ -38,7 +38,7 @@ export default function LogoClouds() {
               <img
                 loading="lazy"
                 className="max-h-12 w-full object-contain"
-                src="/logos/sms.png"
+                src="https://backend.dv-it.ch/wp-content/uploads/2024/06/GrovemadeLogo.png"
                                 alt="Laravel"
                 width={158}
                 height={48}

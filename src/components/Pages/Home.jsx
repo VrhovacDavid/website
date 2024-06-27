@@ -15,7 +15,12 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import { Gradient } from "whatamesh";
 import PricingNew from './PricingNew';
 import { useLocation } from 'react-router-dom';
-import PricingStripe from './PricingStripe';
+
+
+
+
+
+
 
 
 const Home = () => {
@@ -49,6 +54,9 @@ const Home = () => {
         <motion.div className="fixed z-10 top-0 left-0 right-0 h-[4px] bg-gradient-to-r from-fuchsia-400 to-sky-400 origin-left" style={{ scaleX }} />
         <Header />
         <HeroSection />
+
+
+
         <div className='-skew-y-6 z-10'>
           <canvas id="gradient-canvas" className='sm:h-[300px] h-[200px] w-full' ></canvas>
         </div>
@@ -64,6 +72,9 @@ const Home = () => {
         <FAQ />
         <Download />
         <Footer />
+        
+      
+
       </div>
     </div>
   );
